@@ -1,0 +1,136 @@
+/*
+    Default color styles - You can change this colors to any color you want
+*/
+
+#header .navbar-default .navbar-nav > li > a:hover,
+#header .navbar-default .navbar-nav > .current-menu-item > a,
+#header .dropdown-menu > li.current-menu-item > a,
+#header .navbar-default .navbar-nav > li>a:hover, 
+#header .navbar-default .navbar-nav > li >a:focus, 
+#header .dropdown-menu > li > a:hover, 
+#header .dropdown-menu > li > a:focus, 
+#header .dropdown.dropdown-submenu > a:hover::after,
+#header .navbar-default .navbar-nav > .current-menu-item > a:before,
+.no-touch .dl-menuwrapper li a:hover,
+.dl-menuwrapper li.dl-back:after,
+.dl-menuwrapper li > a:not(:only-child):after,
+.dl-menuwrapper li.dl-back:after,
+strong a,
+.master-slider .pi-caption02,
+.page-content.dark .custom-heading .divider .hr-circle,
+.dark .custom-heading.style-1 h1 span,
+.dark .custom-heading.style-1 h2 span,
+.divider .divider-svg img,
+#footer-wrapper span,
+#footer-wrapper .social-links li a:hover i,
+#copyright-container .breadcrumb li a:hover,
+#copyright-container a,
+#copyright-container span,
+#fancy-testimonial-carousel .testimonial-author {
+    color: #fcda9a;
+}
+
+span,
+a:hover,
+.custom-heading.style-1:before,
+.custom-heading.style-1:after,
+.custom-heading .divider .hr-icon,
+.menu-item-price p,
+.page-content ul li:before,
+h1 span, h2 span, h3 span,
+h4 span, h5 span, h6 span,
+#filters li a:hover, #filters .active a,
+.page-content.dark .wpcf7 .wpcf7-text:focus,
+.page-content.dark .wpcf7 .wpcf7-textarea:focus,
+.otw-party-size-wrap:before,
+.otw-time-wrap:before,
+.otw-date-wrap:before,
+.otw-restaurant-wrap:before,
+.otw-email-wrap:before,
+.otw-name-wrap:before,
+.blockquote.style-1 p,
+.blockquote.style-3 p,
+.tabs li.active a,
+.post-body .custom-heading a h3:hover,
+.post-meta li .meta-time .fa,
+.post-meta li .meta-tags .fa,
+.post-meta li .meta-time .fa,
+.post-meta li .meta-tags .fa,
+.blog-filters .dropdown .dropdown-toggle:hover,
+.circle-list-style-type li:before,
+.blog-author-description a,
+.accordion .title a:before,
+.accordion .title.active a:before,
+.accordion .title.active a:hover:before,
+.accordion .title a:hover:before,
+.nivo-caption .menu-price,
+.menu-sample.style-3 .menu-price p,
+.rpw_posts_widget li .fa,
+.rpw_posts_widget li a:hover h4,
+.rating span.star.highlighted:before,
+.owl-carousel .owl-controls .owl-buttons .owl-next:hover:before,
+.owl-carousel .owl-controls .owl-buttons .owl-prev:hover:before{
+    color: #b48c80;
+}
+
+.page-content.dark .divider .hr-simple,
+.page-content.dark .divider .hr-double:before,
+.page-content.dark .divider .hr-double:after,
+#footer-wrapper .newsletter .submit,
+.btn.gold,
+.master-slider .divider .hr-double:before,
+.master-slider .divider .hr-double:after,
+.hover-mask-container .hover-zoom:hover:before,
+.hover-mask-container .hover-zoom:hover:after {
+    background-color: #fcda9a;
+}
+
+.divider .hr-simple, .hr-simple,
+.divider .hr-double:before,
+.divider .hr-double:after,
+.page-content.dark .open-table-widget-style-1 .divider .hr-simple,
+.btn.black:hover,
+.btn.gold:hover,
+#footer-wrapper .newsletter .submit:hover,
+.tab-menu-price .menu-price,
+.simple-divider {
+    background-color: #b48c80;
+}
+
+.owl-controls .owl-page.active span,
+.otw-widget-form-wrap input[type="submit"]:hover {
+    background-color: #b48c80 !important;
+}
+.svg-brown .st0{
+    fill: #b48c80;
+}
+
+/*  BORDERS
+============================================================================= */
+
+
+
+.page-content.dark .wpcf7 .wpcf7-text:focus,
+.page-content.dark .wpcf7 .wpcf7-textarea:focus,
+a.more-details{
+    border-bottom-color: #b48c80;
+}
+
+.custom-heading.add-divider-1:after,
+.tabs li.active a,
+.tabs li a:hover,
+.wpcf7 .wpcf7-text:focus,
+.wpcf7 .wpcf7-textarea:focus,
+.accordion.style-2 .title.active,
+.blockquote.style-3 {
+    border-color: #b48c80;
+}
+
+.owl-carousel .owl-controls .owl-buttons .owl-prev:hover,
+.owl-carousel .owl-controls .owl-buttons .owl-next:hover{
+    border-color: #b48c80 !important;
+}
+
+.scroll-up:hover {
+    border-color: #fcda9a;
+}

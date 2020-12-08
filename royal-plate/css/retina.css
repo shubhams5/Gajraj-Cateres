@@ -1,0 +1,38 @@
+/*
+    Retina ready styles
+*/
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5),
+only screen and (min--moz-device-pixel-ratio: 1.5),
+only screen and (-o-min-device-pixel-ratio: 3/2),
+only screen and (min-device-pixel-ratio: 1.5){
+
+    .widget_search .search-submit {
+        background-image: url('../img/search%402x.png');
+        background-size: 18px 18px;
+    }
+    .border-decor .menu-image:before {
+        background-image: url('../img/border-decor%402x.png');
+        background-size: 52px 8px;
+    }
+    .page-content .locations-select {
+        background-image: url('../img/input-arrow%402x.png');
+        background-size: 16px 12px;
+    }
+    .menu-left-shadow:before {
+        background-image: url('../img/menu-left-shadow%402x.png');
+        background-size: 116px 643px;
+    }
+    .menu-right-shadow:before {
+        background-image: url('../img/menu-right-shadow%402x.png');
+        background-size: 116px 643px;
+    }
+    .nivo-nextNav {
+        background-image: url('../img/nivo-next-nav%402x.png');
+        background-size: 17px 30px;
+    }
+    .nivo-prevNav {
+        background-image: url('../img/nivo-prev-nav%402x.png');
+        background-size: 17px 30px;
+    }
+}
+
