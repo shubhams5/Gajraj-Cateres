@@ -1282,7 +1282,7 @@ All this is done for any sub-level being entered.
 }
 
 .dl-menuwrapper button {
-  background: #252525;
+  background: #000000;
 }
 
 .dl-menuwrapper button:hover {
@@ -1295,6 +1295,20 @@ All this is done for any sub-level being entered.
 }
 
 @media only screen and (min-width: 320px) and (max-width: 479px) {
+  .icon-bar {
+    right: 10px;
+    top: 70%;
+  }
+  .icon-bar a {
+    height: 35px;
+    width: 35px;
+    padding: 5px;
+    font-size: 15px;
+  }
+  .modal {
+    padding-top: 0;
+  }
+
   .page-content .row {
     margin-bottom: 0px;
   }
@@ -1324,7 +1338,6 @@ All this is done for any sub-level being entered.
   /*  NAVIGATION
     --------------------------------------------------------------------- */
   #header .nav-left .navbar-header {
-    width: 100%;
   }
   .navbar-nav.pi-nav {
     display: none;
@@ -1344,7 +1357,7 @@ All this is done for any sub-level being entered.
   }
   .logo {
     display: table;
-    margin: 20px auto;
+    margin: 0;
   }
   .logo img {
     height: 80px;
