@@ -1,0 +1,223 @@
+<div class="col-md-6 menu-right-shadow">
+            <div class="custom-heading style-2">
+              <h4>Main dishes</h4>
+              <div class="divider style-1">
+                <i class="fa fa-circle hr-icon left"></i>
+                <span class="hr-simple right"></span>
+              </div>
+            </div>
+            <!-- .custom-heading.style-2 end -->
+            <ul class="menu-style-2">
+              <li>
+                <h5>VEG MAIN COURSE</h5>
+              </li>
+              <li class="menu-item">
+                <div class="menu-item-title">
+                  <p>INDIAN</p>
+                  <span class="dotted-line"></span>
+                </div>
+
+                <div class="menu-item-description">
+                  <p>
+                    Kadhai Paneer<br />
+                    Shahi Paneer<br />
+                    Paneer Methi Masala<br />
+                    Paneer Kofta<br />
+                    Paneer Lasooni<br />
+                    Pindi Chhole<br />
+                    Chana raunakdar<br />
+                    Paneer badami<br />
+                    Aloo Mutter<br />
+                    Aloo Methi<br />
+                    Dum Aloo Kashmiri<br />
+                    Shahi Dum Aloo<br />
+                    Makai Palak<br />
+                    Subz Handi<br />
+                    Subz Lajawab<br />
+                    Mirch baingan Ka Salan<br />
+                    Subz Hyderabadi<br />
+                    Subz Lababdar<br />
+                    Mashed Potatoes<br />
+                    Subj chilli milli<br />
+                    Tawa kuchan<br />
+                    Veg bhuna<br />
+                    Paneer makai ka shweta<br />
+                    Hari mirch ka salan<br />
+                    Gate ka saag<br />
+                    Rajastani mirchi ki kadi<br />
+                    Mangodi ki subji<br />
+                    Veg keema lababadar<br />
+                    Paneer pasanda<br />
+                    Lakhnawai paneeer korma<br />
+                    Sarso ka saag<br />
+                    Paneer lazeez<br />
+                    Dilli ke kumb<br />
+                    Paneer hot garlic souce<br />
+                    Mushroom butter garlic souce<br />
+                    Star fry vegetable in black bean souce<br />
+                    Veg kofta<br />
+                    Veg nargisi kofta<br />
+                    Anjeer ke kofta<br />
+                    Spinach of cannaloni with mushroom & thyme<br />
+                    Baked Corn, Mushroom and Spinach <br />
+                    Veg shyam sabera<br />
+                    Bilayati subji<br />
+                    Bhareli wangi<br />
+                    Lassoni palak<br />
+                    Methi chaman
+                  </p>
+                </div>
+              </li>
+              <li class="menu-item">
+                <div class="menu-item-title">
+                  <p>ASIAN FOOD</p>
+                  <span class="dotted-line"></span>
+                </div>
+
+                <div class="menu-item-description">
+                  <p>
+                    Burnt Garlic Fried Rice <br />
+                    Ginger Mushroom Rice <br />
+                    Veg Fried Rice<br />
+                    Phad Thai Noodles <br />
+                    Hong Kong Noodles<br />
+                    Burnt Chilli Noodles <br />
+                    Cilantro Sauce<br />
+                    Penut Sauce <br />
+                    Schezwan Sauce <br />
+                    Sweet Chilli Sauce <br />
+                    Thai Green Curry <br />
+                    Thai Red&Yellow curry<br />
+                    Live Mongolian Counter
+                  </p>
+                </div>
+              </li>
+              <li class="menu-item">
+                <div class="menu-item-title">
+                  <p>ITALIAN AND CONTINENTAL</p>
+                  <span class="dotted-line"></span>
+                </div>
+
+                <div class="menu-item-description">
+                  <p>
+                    Grilled cottage cheese with pepper sauce<br />
+                    Cauliflower broccoli mornay sauce<br />
+                    Baked vegetable rosey sauce<br />
+                    Veg Moussaka<br />
+                    Veg lasagna<br />
+                    Grilled cottage cheese BBQ sauce<br />
+                    Roast mix Vegetables<br />
+                    Vegetable au gratin<br />
+                    Mashed Potato with Garlic and cheese<br />
+                    Enchilladas<br />
+                  </p>
+                </div>
+              </li>
+              <li class="menu-item">
+                <div class="menu-item-title">
+                  <p>DAL</p>
+                  <span class="dotted-line"></span>
+                </div>
+
+                <div class="menu-item-description">
+                  <p>
+                    Dal tadka / Dal fry /Dal Palak <br />
+                    / Dal pacharatni / Rajma Masala. Kadi Pakoda
+                  </p>
+                </div>
+              </li>
+              <li class="menu-item">
+                <div class="menu-item-title">
+                  <p>RICE</p>
+                  <span class="dotted-line"></span>
+                </div>
+
+                <div class="menu-item-description">
+                  <p>
+                    Steam rice / jeera pulao / Peas pulao / Veg <br />
+                    Pulao. Dal Khichdi<br />
+                    Fried Rice with Seafood / Noodles<br />
+                    Biryani (All)<br />
+                    Portuguese fried rice<br />
+                    Phad thai noodles<br />
+                    Mexican rice / Rissoto<br />
+                  </p>
+                </div>
+              </li>
+              <li class="menu-item">
+                <div class="menu-item-title">
+                  <p>BREADS</p>
+                  <span class="dotted-line"></span>
+                </div>
+
+                <div class="menu-item-description">
+                  <p>
+                    Assorted Roti<br />
+                    Bread Roll<br />
+                    Garlic Bread<br />
+                  </p>
+                </div>
+              </li>
+              <li class="menu-item">
+                <div class="menu-item-title">
+                  <p>LIVE COUNTER</p>
+                  <span class="dotted-line"></span>
+                </div>
+
+                <div class="menu-item-description">
+                  <p>
+                    Pasta / Pizza<br />
+                    Chinese / Mangolian<br />
+                    Chaat<br />
+                    Appam / dosa / tatte idli<br />
+                    Crespelle Counter<br />
+                    Kheema pav<br />
+                    Labanese<br />
+                    Pav Bhaji<br />
+                    Live Salad Bar<br />
+                    Chole Kulcha / Bhature<br />
+                    Doller Jellebi with Rabdi<br />
+                  </p>
+                </div>
+              </li>
+            </ul>
+            <div class="custom-heading style-2">
+              <h4>Deserts</h4>
+              <div class="divider style-1">
+                <i class="fa fa-circle hr-icon left"></i>
+                <span class="hr-simple right"></span>
+              </div>
+            </div>
+            <!-- .custom-heading.style-2 end -->
+            <ul class="menu-style-2">
+              <li class="menu-item">
+                <div class="menu-item-description">
+                  <p>
+                    Gulab Jamun<br />
+                    Mix Fruit Mouuse<br />
+                    Fruit Tart<br />
+                    Gajar Halwa<br />
+                    Sewaiya Kheer<br />
+                    Phirni<br />
+                    Pastry<br />
+                    Chocolate brownie<br />
+                    Malpua with rabdi<br />
+                    Mango mousse<br />
+                    Chocolate Mousse<br />
+                    Vanilla ice cream with Hcs<br />
+                    Assortment of Fresh Fruits<br />
+                    Coconut Payasam<br />
+                    Chocolate Devil Cake<br />
+                    Blueberry Cheese Cake<br />
+                    Cheese Cake<br />
+                    Cream Caramel<br />
+                    Bread Butter Pudding<br />
+                    Red Velvet Cake<br />
+                    Mini Cho Bomb<br />
+                    Panna cota<br />
+                    Tiramissu<br />
+                  </p>
+                </div>
+              </li>
+            </ul>
+          </div>

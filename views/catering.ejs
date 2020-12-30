@@ -1,530 +1,856 @@
 <!DOCTYPE html>
 
 <html>
-
-<head>
-    <meta charset="utf-8">
+  <head>
+    <meta charset="utf-8" />
     <title>Gajraj Caterers</title>
-    <meta name="author" content="Logyana Solutions">
-    <meta name="keywords" content="CSS, HTML5, clean, restaurant, jQuery, retina, bootstrap">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Logyana Solutions" />
+    <meta
+      name="keywords"
+      content="CSS, HTML5, clean, restaurant, jQuery, retina, bootstrap"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <!-- Stylesheets -->
-    <link rel="stylesheet" href="css/bootstrap.min.css" /><!-- bootstrap grid -->
-    <link rel="stylesheet" href="css/bootstrap-theme.min.css" /><!-- bootstrap theme -->
-    <link rel="stylesheet" href="css/style.css" /><!-- template styles -->
-    <link rel="stylesheet" href="css/color-default.css" /><!-- default template color styles -->
-    <link rel="stylesheet" href="css/retina.css" /><!-- retina ready styles -->
-    <link rel="stylesheet" href="css/responsive.css" /><!-- responsive styles -->
-    <link rel="stylesheet" href="css/animate.css" /><!-- animation for content -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <!-- bootstrap grid -->
+    <link rel="stylesheet" href="css/bootstrap-theme.min.css" />
+    <!-- bootstrap theme -->
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- template styles -->
+    <link rel="stylesheet" href="css/color-default.css" />
+    <!-- default template color styles -->
+    <link rel="stylesheet" href="css/retina.css" />
+    <!-- retina ready styles -->
+    <link rel="stylesheet" href="css/responsive.css" />
+    <!-- responsive styles -->
+    <link rel="stylesheet" href="css/animate.css" />
+    <!-- animation for content -->
 
     <!-- Google Web fonts -->
-    <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Suranna' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Montez' rel='stylesheet' type='text/css'>
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat:400,700"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Suranna"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Montez"
+      rel="stylesheet"
+      type="text/css"
+    />
 
     <!-- Font icons -->
-    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css" /><!-- Font awesome icons -->
-</head>
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css" />
+    <!-- Font awesome icons -->
+    <script
+      src="https://kit.fontawesome.com/a71853c901.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
 
-<body>
+  <body>
+    <div id="myModal" class="modal">
+      <!-- Modal content -->
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <div class="row" style="margin-bottom: 0">
+          <!-- .col-md-4 start -->
+          <div class="col centered pt-150 open-table-widget-style-1">
+            <div class="custom-heading style-1">
+              <h3><span>Reservation</span></h3>
+              <h3>Book Your Event</h3>
+
+              <!-- .divider.style-1 start -->
+              <div class="divider style-1 center">
+                <span class="hr-simple left"></span>
+                <i class="fa fa-circle hr-icon"></i>
+                <span class="hr-simple right"></span>
+              </div>
+            </div>
+            <!-- .custom-heading.style-1 end -->
+
+            <!-- Open table widget start -->
+            <div
+              class="otw-bare-bones-style widget open-table-widget triggerAnimation animated"
+              data-animate="fadeIn"
+            >
+              <div class="otw-bare-bones">
+                <div class="otw-widget-form-wrap">
+                  <form method="POST" action="/submit" class="otw-widget-form">
+                    <div class="otw-wrapper">
+                      <div class="otw-name-wrap otw-input-wrap">
+                        <input
+                          name="name"
+                          class="otw-reservation-name"
+                          type="text"
+                          placeholder="Your name"
+                        />
+                      </div>
+                      <div class="otw-email-wrap otw-input-wrap">
+                        <input
+                          name="email"
+                          class="otw-reservation-email"
+                          type="text"
+                          placeholder="Your email"
+                        />
+                      </div>
+                      <div class="otw-name-wrap otw-input-wrap">
+                        <input
+                          name="phone"
+                          class="otw-reservation-name"
+                          type="text"
+                          placeholder="Mobile no."
+                        />
+                      </div>
+                      <div class="otw-date-wrap otw-input-wrap">
+                        <input
+                          name="date"
+                          class="otw-reservation-date"
+                          type="text"
+                          value="17/09/2016"
+                          autocomplete="off"
+                          data-date-format="mm/dd/yyyy"
+                        />
+                      </div>
+                      <div name="time" class="otw-time-wrap otw-input-wrap">
+                        <select
+                          name="time"
+                          class="otw-reservation-time selectpicker"
+                        >
+                          <option value="6:00pm">6:00 pm</option>
+                          <option value="6:30pm">6:30 pm</option>
+                          <option value="7:00pm">7:00 pm</option>
+                          <option value="7:30pm">7:30 pm</option>
+                          <option value="8:00pm">8:00 pm</option>
+                          <option value="8:30pm">8:30 pm</option>
+                          <option value="9:00pm">9:00 pm</option>
+                          <option value="9:30pm">9:30 pm</option>
+                          <option value="10:00pm">10:00 pm</option>
+                          <option value="10:30pm" selected="selected">
+                            10:30 pm
+                          </option>
+                        </select>
+                      </div>
+                      <div
+                        name="people"
+                        class="otw-party-size-wrap otw-input-wrap"
+                      >
+                        <select
+                          name="people"
+                          class="otw-party-size-select selectpicker"
+                        >
+                          <option value="1">1 person</option>
+                          <option value="2">2 people</option>
+                          <option value="3">3 people</option>
+                          <option value="4" selected="selected">
+                            4 people
+                          </option>
+                          <option value="5">5 people</option>
+                          <option value="6">6 people</option>
+                          <option value="7">7 people</option>
+                          <option value="8">8 people</option>
+                          <option value="9">9 people</option>
+                          <option value="10">10 people</option>
+                          <option value="11">11 people</option>
+                          <option value="12">12 people</option>
+                          <option value="13">13 people</option>
+                          <option value="14">14 people</option>
+                          <option value="15">15 people</option>
+                        </select>
+                      </div>
+                      <div name="event" class="otw-time-wrap otw-input-wrap">
+                        <select
+                          name="event"
+                          class="otw-reservation-time selectpicker"
+                        >
+                          <option selected="Event Type">Event Type</option>
+                          <option value="Weddings">Weddings</option>
+                          <option value="Office Parties">Office Parties</option>
+                          <option value="Corporate Functions">
+                            Corporate Functions
+                          </option>
+                          <option value="Anniversaries">Anniversaries</option>
+                          <option value="Formal Receptions">
+                            Formal Receptions
+                          </option>
+                          <option value="Coffee Breaks">Coffee Breaks</option>
+                          <option value="Housewarming Parties">
+                            Housewarming Parties
+                          </option>
+                          <option value="Birthdays/ Holidays">
+                            Birthdays/ Holidays
+                          </option>
+                          <option value="Luncheons">Luncheons</option>
+                          <option value="Box Lunches">Box Lunches</option>
+                          <option value="Party Platters">Party Platters</option>
+                          <option value="Dinner Parties">Dinner Parties</option>
+                        </select>
+                      </div>
+                      <div>
+                        <button type="submit" class="submitBtn">
+                          Book Event
+                        </button>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+                <!-- .otw-widget-form-wrap end -->
+              </div>
+            </div>
+            <!-- Open table widget end -->
+          </div>
+          <!-- .col-md-4 end -->
+        </div>
+      </div>
+    </div>
+
     <div class="icon-bar">
-        <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
-        <a href="#" class="instagram"><i class="fa fa-instagram"></i></a>
-        <a href="#" class="phone"><i class="fa fa-phone"></i></a>
-        <a href="#" class="envelope"><i class="fa fa-envelope"></i></a>
+      <a
+        href="https://facebook.com/GajrajCaterer/"
+        class="facebook"
+        target="_blank"
+      >
+        <i class="fa fa-facebook"></i>
+      </a>
+      <a
+        href="https://www.instagram.com/gajrajcaterers/"
+        class="instagram"
+        target="_blank"
+      >
+        <i class="fa fa-instagram"></i>
+      </a>
+      <a href="tel:+91-9511990088" class="phone"><i class="fa fa-phone"></i></a>
+      <a
+        href="https://api.whatsapp.com/send?phone=9511990088"
+        class="whatsapp"
+        target="_blank"
+      >
+        <i class="fa fa-whatsapp" style="font-size: 23px"></i>
+      </a>
     </div>
     <!-- .header-wrapper start -->
     <div id="header-wrapper">
-        <!-- #header start -->
-        <header id="header">
+      <!-- #header start -->
+      <header id="header">
+        <!-- Main navigation and logo container -->
+        <div class="header-inner">
+          <!-- .container start -->
+          <div class="container">
+            <!-- .main-nav start -->
+            <div class="main-nav">
+              <!-- .row start -->
+              <div class="row">
+                <div class="col-md-12">
+                  <!-- .navbar start -->
+                  <nav class="navbar navbar-default nav-left">
+                    <!-- .navbar-header start -->
+                    <div class="navbar-header">
+                      <!-- .logo start -->
+                      <div class="logo">
+                        <a href="index-2.html">
+                          <img src="img/logo.png" style="width:150px"
+                          "height:80px" alt="Gajraj Caterers">
+                        </a>
+                      </div>
+                      <!-- logo end -->
+                    </div>
+                    <!-- .navbar-header end -->
 
-            <!-- Main navigation and logo container -->
-            <div class="header-inner">
-                <!-- .container start -->
-                <div class="container">
-                    <!-- .main-nav start -->
-                    <div class="main-nav">
-                        <!-- .row start -->
-                        <div class="row">
-                            <div class="col-md-12">
-                                <!-- .navbar start -->
-                                <nav class="navbar navbar-default nav-left">
+                    <!-- Collect the nav links, forms, and other content for toggling -->
+                    <div class="collapse navbar-collapse">
+                      <ul class="nav navbar-nav pi-nav">
+                        <li class="dropdown">
+                          <a href="/">Home</a>
+                        </li>
 
-                                    <!-- .navbar-header start -->
-                                    <div class="navbar-header">
-                                        <!-- .logo start -->
-                                        <div class="logo">
-                                            <a href="index-2.html">
-                                                <img src="img/logo.png" style="width:150px" "height:80px"
-                                                    alt="Gajraj Caterers">
-                                            </a>
-                                        </div><!-- logo end -->
-                                    </div><!-- .navbar-header end -->
+                        <li class="dropdown"><a href="/about">About</a></li>
 
-                                    <!-- Collect the nav links, forms, and other content for toggling -->
-                                    <div class="collapse navbar-collapse">
-                                        <ul class="nav navbar-nav pi-nav">
-                                            <li class="dropdown">
-                                                <a href="/">Home</a>
-                                            </li>
+                        <li class="dropdown current-menu-item">
+                          <a href="/catering">Catering</a>
+                          <ul class="dropdown-menu">
+                            <li><a href="/catering">Catering</a></li>
+                            <li><a href="/menu">Menu</a></li>
+                          </ul>
+                          <!-- .dropdown-menu end -->
+                        </li>
 
-                                            <li class="dropdown"><a href="/about">About</a>
+                        <li>
+                          <a href="/gallery">Gallery</a>
+                        </li>
 
-                                            </li>
+                        <li>
+                          <a href="/contact">Contact</a>
+                        </li>
+                      </ul>
+                      <!-- .nav.navbar-nav.pi-nav end -->
 
-                                            <li class="current-menu-item dropdown">
-                                                <a href="/catering">Catering</a>
-                                                <ul class="dropdown-menu">
-                                                    <li><a href="/catering">Catering</a></li>
-                                                    <li><a href="/menu">Menu</a></li>
-                                                </ul><!-- .dropdown-menu end -->
-                                            </li>
+                      <!-- Responsive menu start -->
+                      <div id="dl-menu" class="dl-menuwrapper">
+                        <button class="dl-trigger"></button>
 
-                                            <li>
-                                                <a href="/gallery">Gallery</a>
-                                            </li>
+                        <ul class="dl-menu">
+                          <li>
+                            <a href="/">Home</a>
+                          </li>
+                          <!-- Home li end -->
 
-                                            <li>
-                                                <a href="/contact">Contact</a>
-                                            </li>
-                                        </ul><!-- .nav.navbar-nav.pi-nav end -->
+                          <li>
+                            <a href="/about">About</a>
+                          </li>
+                          <!-- About li end -->
 
-                                        <!-- Responsive menu start -->
-                                        <div id="dl-menu" class="dl-menuwrapper">
-                                            <button class="dl-trigger">Open Menu</button>
-
-                                            <ul class="dl-menu">
-                                                <li>
-                                                    <a href="#">Home</a>
-                                                    <ul class="dl-submenu">
-                                                        <li><a href="/home">Home page</a></li>
-                                                    </ul><!-- .dl-submenu end -->
-                                                </li><!-- Home li end -->
-
-                                                <li>
-                                                    <a href="/about">About</a>
-                                                </li><!-- About li end -->
-
-                                                <li>
-                                                    <a href="/menu">Menu</a>
-                                                </li><!-- Menu li end -->
-                                                <li>
-                                                    <a href="/catering">Catering</a>
-                                                </li><!-- Catering li end -->
-                                                <li>
-                                                    <a href="/gallery">Gallery</a>
-                                                </li><!-- Gallery li end -->
-                                                <li>
-                                                    <a href="/contact">Contact</a>
-                                                </li><!-- Contact li end -->
-
-                                            </ul><!-- .dl-menu end -->
-                                        </div><!-- (Responsive menu) #dl-menu end -->
-                                    </div><!-- .navbar.navbar-collapse end -->
-                                </nav><!-- .navbar end -->
-                            </div><!-- .col-md-12 end -->
-                        </div><!-- .row end -->
-                    </div><!-- .main-nav end -->
-                </div><!-- .container end -->
-            </div><!-- .header-inner end -->
-        </header><!-- #header end -->
-    </div><!-- #header-wrapper end -->
-
-    <!-- .page-content start -->
-    <div class="page-content custom-img-background dark page-title page-title-4 mb-100">
-        <div class="container">
-            <!-- .row start -->
-            <div class="row">
-                <!-- .col-md-12 start -->
-                <div class="col-md-12 centered">
-                    <div class="custom-heading style-1 triggerAnimation animated" data-animate='fadeInUp'>
-                        <h1><span>For your special day</span></h1>
-                        <h1>Exceptional catering</h1>
-                    </div><!-- .custom-heading.style-1 end -->
-                </div><!-- .col-md-12 end -->
-            </div><!-- .row end -->
-        </div><!-- .container end -->
-    </div><!-- .page-content end -->
-
-    <!-- .page-content start -->
-    <div class="page-content">
-        <div class="container">
-            <!-- .row start -->
-            <div class="row">
-                <!-- .col-md-6 start -->
-                <div class="col-md-6 col-sm-6">
-                    <img src="img/pics/img-08.jpg" alt="Gajraj Caterers" />
-                </div><!-- .col-md-6 end -->
-                <!-- .col-md-6 start -->
-                <div class="col-md-6 col-sm-6 centered pt-60">
-                    <div class="custom-heading style-1">
-                        <h3><span>Catering</span></h3>
-                        <h3>Special events</h3>
-
-                        <!-- .divider.style-1 start -->
-                        <div class="divider style-1 center">
-                            <span class="hr-simple left"></span>
-                            <i class="fa fa-circle hr-icon"></i>
-                            <span class="hr-simple right"></span>
-                        </div>
-                    </div><!-- .custom-heading.style-1 end -->
-
-                    <ul class="article-meta">
-                        <li>Weddings,</li>
-                        <li>Anniversaires,</li>
-                        <li>Baby showers</li>
-                    </ul><!-- .article-meta end -->
-
-                    <p>Celebrate your special event in beautiful atmosphere of Gajraj Caterers.
-                        Exquisite & creative cousine, friendly atmosphere and highly professional staff will make your
-                        special day beautiful & enjoyable. You can select from couple of pre-made menus for every
-                        occasion that should please many
-                        different palates or work with us to create your own menu.</p>
-                    <a href="catering-single-page.html" class="more-details triggerAnimation animated"
-                        data-animate='fadeInUp'>More details <i class="fa fa-angle-double-right"></i></a>
-
-                </div><!-- .col-md-6 end -->
-            </div><!-- .row end -->
-        </div><!-- .container end -->
-    </div><!-- .page-content end -->
-
-    <!-- .page-content start -->
-    <div class="page-content">
-        <div class="container">
-            <!-- .row start -->
-            <div class="row">
-                <!-- .col-md-6 start -->
-                <div class="col-md-6 col-sm-6 centered pt-60">
-                    <div class="custom-heading style-1">
-                        <h3><span>Catering</span></h3>
-                        <h3>Corporate events</h3>
-
-                        <!-- .divider.style-1 start -->
-                        <div class="divider style-1 center">
-                            <span class="hr-simple left"></span>
-                            <i class="fa fa-circle hr-icon"></i>
-                            <span class="hr-simple right"></span>
-                        </div>
-                    </div><!-- .custom-heading.style-1 end -->
-                    <ul class="article-meta">
-                        <li>Meetings,</li>
-                        <li>Team buildings,</li>
-                        <li>Corporate parties</li>
-                    </ul><!-- .article-meta end -->
-
-                    <p>Planning an important business meeting with your partners? Impress them with lunch in Gajraj Caterers.
-                        Gajraj Caterers covers everything from business lunches, to custom team building programs and
-                        corporate
-                        parties. No matter of party size and occasion, our catering specialist will plan your event to
-                        meet
-                        your needs.</p>
-                    <a href="catering-single-page.html" class="more-details triggerAnimation animated"
-                        data-animate='fadeInUp'>More details <i class="fa fa-angle-double-right"></i></a>
-                </div><!-- .col-md-6 end -->
-                <!-- .col-md-6 start -->
-                <div class="col-md-6 col-sm-6">
-                    <img src="img/pics/img-09.jpg" alt="Gajraj Caterers" />
-                </div><!-- .col-md-6 end -->
-            </div><!-- .row end -->
-        </div><!-- .container end -->
-    </div><!-- .page-content end -->
-
-    <!-- .page-content start -->
-    <div class="page-content">
-        <div class="container">
-            <!-- .row start -->
-            <div class="row">
-                <!-- .col-md-6 start -->
-                <div class="col-md-6 col-sm-6">
-                    <img src="img/pics/img-10.jpg" alt="Gajraj Caterers" />
-                </div><!-- .col-md-6 end -->
-                <!-- .col-md-6 start -->
-                <div class="col-md-6 col-sm-6 centered pt-60">
-                    <div class="custom-heading style-1">
-                        <h3><span>Catering</span></h3>
-                        <h3>Social events</h3>
-
-                        <!-- .divider.style-1 start -->
-                        <div class="divider style-1 center">
-                            <span class="hr-simple left"></span>
-                            <i class="fa fa-circle hr-icon"></i>
-                            <span class="hr-simple right"></span>
-                        </div>
-                    </div><!-- .custom-heading.style-1 end -->
-
-                    <ul class="article-meta">
-                        <li>Birthdays,</li>
-                        <li>Family reunion,</li>
-                        <li>Or just because</li>
-                    </ul><!-- .article-meta end -->
-
-                    <p>Weather you are celebrating your birthday, have a family reunion or
-                        something else, we’ll make it enjoying and memorable. Our experts have years of experience in
-                        party planning and will make sure it is a delicious
-                        success, enjoying and memorable for you and your guests! Time to put your party hat on!</p>
-                    <a href="catering-single-page.html" class="more-details triggerAnimation animated"
-                        data-animate='fadeInUp'>More details <i class="fa fa-angle-double-right"></i></a>
-
-                </div><!-- .col-md-6 end -->
-            </div><!-- .row end -->
-        </div><!-- .container end -->
-    </div><!-- .page-content end -->
-
-    <!-- .page-content start -->
-    <div class="page-content custom-img-background dark bkg-img15 custom-col-padding mb-100">
-        <div class="container">
-            <!-- .row start -->
-            <div class="row">
-                <!-- .col-md-12 start -->
-                <div class="col-md-12 centered">
-                    <div class="custom-heading style-1 triggerAnimation animated" data-animate='fadeInUp'>
-                        <h2><span>Sample menus</span></h2>
-                        <h2>Catering menu examples</h2>
-
-                        <!-- .divider.style-2 start -->
-                        <div class="divider style-2 center">
-                            <span class="hr-double left"></span>
-                            <span class="divider-svg">
-                                <img src="img/svg/heading-icon.svg"
-                                    alt="Gajraj Caterers">
-                            </span>
-                            <span class="hr-double right"></span>
-                        </div>
-                    </div><!-- .custom-heading.style-1 end -->
-                </div><!-- .col-md-12 end -->
-            </div><!-- .row end -->
-        </div><!-- .container end -->
-    </div><!-- .page-content end -->
-
-    <div class="page-content">
-        <!-- .container start -->
-        <div class="container">
-            <!-- .row start -->
-            <div class="row mb-20">
-                <div class="col-md-4 col-sm-4 menu-package">
-                    <div class="menu-sample style-1 border-decor centered">
-                        <figure>
-                            <div class="menu-image">
-                                <img src="img/pics/img-13.jpg"
-                                    alt="Gajraj Caterers" />
-                            </div>
-
-                            <figcaption>
-                                <div class="custom-heading style-1">
-                                    <h4>Special events menu</h4>
-
-                                    <!-- .divider.style-1 start -->
-                                    <div class="divider style-1 center">
-                                        <span class="hr-simple left"></span>
-                                        <i class="fa fa-circle hr-icon"></i>
-                                        <span class="hr-simple right"></span>
-                                    </div>
-                                </div><!-- .custom-heading.style-1 end -->
-
-                                <p>Elegant and sensual dish choices for your special day that will please
-                                    you and your guests. From rustic BBQ to multi-course menu, we’ll prepare
-                                    something delicious and exciting.</p>
-                                <a href="#" class="more-details triggerAnimation animated" data-animate='fadeInUp'>View
-                                    menu <i class="fa fa-angle-double-right"></i></a>
-                            </figcaption>
-                        </figure>
-                    </div><!-- .menu-sample.style-1 end -->
-                </div><!-- .col-md-4 end -->
-                <div class="col-md-4 col-sm-4 menu-package">
-                    <div class="menu-sample style-1 border-decor centered">
-                        <figure>
-                            <div class="menu-image">
-                                <img src="img/pics/img-12.jpg"
-                                    alt="Gajraj Caterers" />
-                            </div>
-
-                            <figcaption>
-                                <div class="custom-heading style-1">
-                                    <h4>Corporate events menu</h4>
-
-                                    <!-- .divider.style-1 start -->
-                                    <div class="divider style-1 center">
-                                        <span class="hr-simple left"></span>
-                                        <i class="fa fa-circle hr-icon"></i>
-                                        <span class="hr-simple right"></span>
-                                    </div>
-                                </div><!-- .custom-heading.style-1 end -->
-
-                                <p>Great food is a soul of every event, so our professional chefs offer you only the
-                                    best dishes for your corporate event. From canapes to multi-course menus. Take a
-                                    look!</p>
-                                <a href="#" class="more-details triggerAnimation animated" data-animate='fadeInUp'>View
-                                    menu <i class="fa fa-angle-double-right"></i></a>
-                            </figcaption>
-                        </figure>
-                    </div><!-- .menu-sample.style-1 end -->
-                </div><!-- .col-md-4 end -->
-
-                <div class="col-md-4 col-sm-4 menu-package">
-                    <div class="menu-sample style-1 border-decor centered">
-                        <figure>
-                            <div class="menu-image">
-                                <img src="img/pics/img-13.jpg"
-                                    alt="Gajraj Caterers" />
-                            </div>
-
-                            <figcaption>
-                                <div class="custom-heading style-1">
-                                    <h4>Social events menu</h4>
-
-                                    <!-- .divider.style-1 start -->
-                                    <div class="divider style-1 center">
-                                        <span class="hr-simple left"></span>
-                                        <i class="fa fa-circle hr-icon"></i>
-                                        <span class="hr-simple right"></span>
-                                    </div>
-                                </div><!-- .custom-heading.style-1 end -->
-
-                                <p>Our talented culinary team have some nice surprises for you. Special combination of
-                                    different
-                                    dishes in one tasty and exciting menu! Menu that will please you and your guests.
-                                </p>
-                                <a href="#" class="more-details triggerAnimation animated" data-animate='fadeInUp'>View
-                                    menu <i class="fa fa-angle-double-right"></i></a>
-                            </figcaption>
-                        </figure>
-                    </div><!-- .menu-sample.style-1 end -->
-                </div><!-- .col-md-4 end -->
-            </div><!-- .row end -->
-            <!-- .row start -->
-            <div class="row">
-                <div class="col-md-12 centered triggerAnimation animated" data-animate='fadeInUp'>
-                    <a href="contact.html" class="btn btn-big black"><span>Need custom menu? Contact us</span></a>
+                          <li>
+                            <a href="/menu">Menu</a>
+                          </li>
+                          <!-- Menu li end -->
+                          <li>
+                            <a href="/catering">Catering</a>
+                          </li>
+                          <!-- Catering li end -->
+                          <li>
+                            <a href="/gallery">Gallery</a>
+                          </li>
+                          <!-- Gallery li end -->
+                          <li>
+                            <a href="/contact">Contact</a>
+                          </li>
+                          <!-- Contact li end -->
+                        </ul>
+                        <!-- .dl-menu end -->
+                      </div>
+                      <!-- (Responsive menu) #dl-menu end -->
+                    </div>
+                    <!-- .navbar.navbar-collapse end -->
+                  </nav>
+                  <!-- .navbar end -->
                 </div>
-            </div><!-- .row end -->
-        </div><!-- .container end -->
-    </div><!-- .page-content end -->
+                <!-- .col-md-12 end -->
+              </div>
+              <!-- .row end -->
+            </div>
+            <!-- .main-nav end -->
+          </div>
+          <!-- .container end -->
+        </div>
+        <!-- .header-inner end -->
+      </header>
+      <!-- #header end -->
+    </div>
+    <!-- #header-wrapper end -->
 
     <!-- .page-content start -->
-    <div class="page-content custom-img-background dark bkg-img16 custom-col-padding">
-        <div class="container">
-            <!-- .row start -->
-            <div class="row">
-                <!-- .col-md-12 start -->
-                <div class="col-md-12 centered">
-                    <div class="custom-heading style-1 triggerAnimation animated" data-animate='fadeInUp'>
-                        <h2><span>Venues</span></h2>
-                        <h2>Discover Gajraj Caterers venues</h2>
-                        <a href="#" class="btn btn-big gold"><span>Discover venus</span></a>
-                    </div><!-- .custom-heading.style-1 end -->
-                </div><!-- .col-md-12 end -->
-            </div><!-- .row end -->
-        </div><!-- .container end -->
-    </div><!-- .page-content end -->
+    <div
+      class="page-content custom-img-background dark page-title page-title-4 mb-100"
+    >
+      <div class="container">
+        <!-- .row start -->
+        <div class="row">
+          <!-- .col-md-12 start -->
+          <div class="col-md-12 centered">
+            <div
+              class="custom-heading style-1 triggerAnimation animated"
+              data-animate="fadeInUp"
+            >
+              <h1><span>For your special day</span></h1>
+              <h1>Exceptional catering</h1>
+            </div>
+            <!-- .custom-heading.style-1 end -->
+          </div>
+          <!-- .col-md-12 end -->
+        </div>
+        <!-- .row end -->
+      </div>
+      <!-- .container end -->
+    </div>
+    <!-- .page-content end -->
 
+    <!-- .page-content start -->
+    <div class="page-content">
+      <div class="container">
+        <!-- .row start -->
+        <div class="row">
+          <!-- .col-md-6 start -->
+          <div class="col-md-6 col-sm-6">
+            <img src="img/pics/img-08.jpg" alt="Gajraj Caterers" />
+          </div>
+          <!-- .col-md-6 end -->
+          <!-- .col-md-6 start -->
+          <div class="col-md-6 col-sm-6 centered pt-60">
+            <div class="custom-heading style-1">
+              <h3><span>Catering</span></h3>
+              <h3>Special events</h3>
+
+              <!-- .divider.style-1 start -->
+              <div class="divider style-1 center">
+                <span class="hr-simple left"></span>
+                <i class="fa fa-circle hr-icon"></i>
+                <span class="hr-simple right"></span>
+              </div>
+            </div>
+            <!-- .custom-heading.style-1 end -->
+
+            <ul class="article-meta">
+              <li>Weddings,</li>
+              <li>Anniversaires,</li>
+              <li>Baby showers</li>
+            </ul>
+            <!-- .article-meta end -->
+
+            <p>
+              Celebrate your special event in beautiful atmosphere of Gajraj
+              Caterers. Exquisite & creative cousine, friendly atmosphere and
+              highly professional staff will make your special day beautiful &
+              enjoyable. You can select from couple of pre-made menus for every
+              occasion that should please many different palates or work with us
+              to create your own menu.
+            </p>
+            <a
+              class="more-details triggerAnimation animated"
+              data-animate="fadeInUp"
+              id="moreDetails1"
+              style="cursor: pointer"
+              >More details <i class="fa fa-angle-double-right"></i
+            ></a>
+          </div>
+          <!-- .col-md-6 end -->
+        </div>
+        <!-- .row end -->
+      </div>
+      <!-- .container end -->
+    </div>
+    <!-- .page-content end -->
+
+    <!-- .page-content start -->
+    <div class="page-content">
+      <div class="container">
+        <!-- .row start -->
+        <div class="row">
+          <!-- .col-md-6 start -->
+          <div class="col-md-6 col-sm-6 centered pt-60">
+            <div class="custom-heading style-1">
+              <h3><span>Catering</span></h3>
+              <h3>Corporate events</h3>
+
+              <!-- .divider.style-1 start -->
+              <div class="divider style-1 center">
+                <span class="hr-simple left"></span>
+                <i class="fa fa-circle hr-icon"></i>
+                <span class="hr-simple right"></span>
+              </div>
+            </div>
+            <!-- .custom-heading.style-1 end -->
+            <ul class="article-meta">
+              <li>Meetings,</li>
+              <li>Team buildings,</li>
+              <li>Corporate parties</li>
+            </ul>
+            <!-- .article-meta end -->
+
+            <p>
+              Planning an important business meeting with your partners? Impress
+              them with lunch in Gajraj Caterers. Gajraj Caterers covers
+              everything from business lunches, to custom team building programs
+              and corporate parties. No matter of party size and occasion, our
+              catering specialist will plan your event to meet your needs.
+            </p>
+            <a
+              class="more-details triggerAnimation animated"
+              data-animate="fadeInUp"
+              id="moreDetails2"
+              style="cursor: pointer"
+              >More details <i class="fa fa-angle-double-right"></i
+            ></a>
+          </div>
+          <!-- .col-md-6 end -->
+          <!-- .col-md-6 start -->
+          <div class="col-md-6 col-sm-6">
+            <img src="img/pics/img-09.jpg" alt="Gajraj Caterers" />
+          </div>
+          <!-- .col-md-6 end -->
+        </div>
+        <!-- .row end -->
+      </div>
+      <!-- .container end -->
+    </div>
+    <!-- .page-content end -->
+
+    <!-- .page-content start -->
+    <div class="page-content">
+      <div class="container">
+        <!-- .row start -->
+        <div class="row">
+          <!-- .col-md-6 start -->
+          <div class="col-md-6 col-sm-6">
+            <img src="img/pics/img-10.jpg" alt="Gajraj Caterers" />
+          </div>
+          <!-- .col-md-6 end -->
+          <!-- .col-md-6 start -->
+          <div class="col-md-6 col-sm-6 centered pt-60">
+            <div class="custom-heading style-1">
+              <h3><span>Catering</span></h3>
+              <h3>Social events</h3>
+
+              <!-- .divider.style-1 start -->
+              <div class="divider style-1 center">
+                <span class="hr-simple left"></span>
+                <i class="fa fa-circle hr-icon"></i>
+                <span class="hr-simple right"></span>
+              </div>
+            </div>
+            <!-- .custom-heading.style-1 end -->
+
+            <ul class="article-meta">
+              <li>Birthdays,</li>
+              <li>Family reunion,</li>
+              <li>Or just because</li>
+            </ul>
+            <!-- .article-meta end -->
+
+            <p>
+              Weather you are celebrating your birthday, have a family reunion
+              or something else, we’ll make it enjoying and memorable. Our
+              experts have years of experience in party planning and will make
+              sure it is a delicious success, enjoying and memorable for you and
+              your guests! Time to put your party hat on!
+            </p>
+            <a
+              class="more-details triggerAnimation animated"
+              data-animate="fadeInUp"
+              id="moreDetails"
+              style="cursor: pointer"
+              >More details <i class="fa fa-angle-double-right"></i
+            ></a>
+          </div>
+          <!-- .col-md-6 end -->
+        </div>
+        <!-- .row end -->
+      </div>
+      <!-- .container end -->
+    </div>
+    <!-- .page-content end -->
+
+    <!-- .page-content start -->
+    <div
+      class="page-content custom-img-background dark bkg-img15 custom-col-padding mb-100"
+    >
+      <div class="container">
+        <!-- .row start -->
+        <div class="row">
+          <!-- .col-md-12 start -->
+          <div class="col-md-12 centered">
+            <div
+              class="custom-heading style-1 triggerAnimation animated"
+              data-animate="fadeInUp"
+            >
+              <h2><span>Sample menus</span></h2>
+              <h2>Catering menu examples</h2>
+
+              <!-- .divider.style-2 start -->
+              <div class="divider style-2 center">
+                <span class="hr-double left"></span>
+                <span class="divider-svg">
+                  <img src="img/svg/heading-icon.svg" alt="Gajraj Caterers" />
+                </span>
+                <span class="hr-double right"></span>
+              </div>
+            </div>
+            <!-- .custom-heading.style-1 end -->
+          </div>
+          <!-- .col-md-12 end -->
+        </div>
+        <!-- .row end -->
+      </div>
+      <!-- .container end -->
+    </div>
+    <!-- .page-content end -->
+
+    <div class="page-content">
+      <!-- .container start -->
+      <div class="container">
+        <!-- .row start -->
+        <div class="row mb-20">
+          <div class="col-md-4 col-sm-4 menu-package">
+            <div class="menu-sample style-1 border-decor centered">
+              <figure>
+                <div class="menu-image">
+                  <img src="img/pics/img-13.jpg" alt="Gajraj Caterers" />
+                </div>
+
+                <figcaption>
+                  <div class="custom-heading style-1">
+                    <h4>Special events menu</h4>
+
+                    <!-- .divider.style-1 start -->
+                    <div class="divider style-1 center">
+                      <span class="hr-simple left"></span>
+                      <i class="fa fa-circle hr-icon"></i>
+                      <span class="hr-simple right"></span>
+                    </div>
+                  </div>
+                  <!-- .custom-heading.style-1 end -->
+
+                  <p>
+                    Elegant and sensual dish choices for your special day that
+                    will please you and your guests. From rustic BBQ to
+                    multi-course menu, we’ll prepare something delicious and
+                    exciting.
+                  </p>
+                  <a
+                    href="/menu"
+                    class="more-details triggerAnimation animated"
+                    data-animate="fadeInUp"
+                    >View menu <i class="fa fa-angle-double-right"></i
+                  ></a>
+                </figcaption>
+              </figure>
+            </div>
+            <!-- .menu-sample.style-1 end -->
+          </div>
+          <!-- .col-md-4 end -->
+          <div class="col-md-4 col-sm-4 menu-package">
+            <div class="menu-sample style-1 border-decor centered">
+              <figure>
+                <div class="menu-image">
+                  <img src="img/pics/img-12.jpg" alt="Gajraj Caterers" />
+                </div>
+
+                <figcaption>
+                  <div class="custom-heading style-1">
+                    <h4>Corporate events menu</h4>
+
+                    <!-- .divider.style-1 start -->
+                    <div class="divider style-1 center">
+                      <span class="hr-simple left"></span>
+                      <i class="fa fa-circle hr-icon"></i>
+                      <span class="hr-simple right"></span>
+                    </div>
+                  </div>
+                  <!-- .custom-heading.style-1 end -->
+
+                  <p>
+                    Great food is a soul of every event, so our professional
+                    chefs offer you only the best dishes for your corporate
+                    event. From canapes to multi-course menus. Take a look!
+                  </p>
+                  <a
+                    href="/menu"
+                    class="more-details triggerAnimation animated"
+                    data-animate="fadeInUp"
+                    >View menu <i class="fa fa-angle-double-right"></i
+                  ></a>
+                </figcaption>
+              </figure>
+            </div>
+            <!-- .menu-sample.style-1 end -->
+          </div>
+          <!-- .col-md-4 end -->
+
+          <div class="col-md-4 col-sm-4 menu-package">
+            <div class="menu-sample style-1 border-decor centered">
+              <figure>
+                <div class="menu-image">
+                  <img src="img/pics/img-13.jpg" alt="Gajraj Caterers" />
+                </div>
+
+                <figcaption>
+                  <div class="custom-heading style-1">
+                    <h4>Social events menu</h4>
+
+                    <!-- .divider.style-1 start -->
+                    <div class="divider style-1 center">
+                      <span class="hr-simple left"></span>
+                      <i class="fa fa-circle hr-icon"></i>
+                      <span class="hr-simple right"></span>
+                    </div>
+                  </div>
+                  <!-- .custom-heading.style-1 end -->
+
+                  <p>
+                    Our talented culinary team have some nice surprises for you.
+                    Special combination of different dishes in one tasty and
+                    exciting menu! Menu that will please you and your guests.
+                  </p>
+                  <a
+                    href="/menu"
+                    class="more-details triggerAnimation animated"
+                    data-animate="fadeInUp"
+                    >View menu <i class="fa fa-angle-double-right"></i
+                  ></a>
+                </figcaption>
+              </figure>
+            </div>
+            <!-- .menu-sample.style-1 end -->
+          </div>
+          <!-- .col-md-4 end -->
+        </div>
+        <!-- .row end -->
+        <!-- .row start -->
+        <div class="row">
+          <div
+            class="col-md-12 centered triggerAnimation animated"
+            data-animate="fadeInUp"
+          >
+            <a href="/contact" class="btn btn-big black"
+              ><span>Need custom menu? Contact us</span></a
+            >
+          </div>
+        </div>
+        <!-- .row end -->
+      </div>
+      <!-- .container end -->
+    </div>
+    <!-- .page-content end -->
 
     <!-- #footer-wrapper start -->
     <div id="footer-wrapper">
-        <!-- #footer start -->
-        <footer id="footer">
-            <!-- .container start -->
-            <div class="container">
-                <!-- .row start -->
-                <div class="row mb-60">
-                    <!-- .col-md-4 start -->
-                    <div class="col-md-4">
+      <!-- #footer start -->
+      <footer id="footer">
+        <!-- .container start -->
+        <div class="container">
+          <!-- .row start -->
+          <div class="row mb-60">
+            <!-- .col-md-4 start -->
+            <div class="col-md-4"></div>
+            <!-- .col-md-4 end-->
 
-                    </div><!-- .col-md-4 end-->
+            <!-- .col-md-4 start -->
+            <div class="col-md-4 centered">
+              <a href="index-2.html">
+                <img src="img/logo.png" alt="Gajraj Caterers" />
+              </a>
 
-                    <!-- .col-md-4 start -->
-                    <div class="col-md-4 centered">
-                        <a href="index-2.html">
-                            <img src="img/logo.png" alt="Gajraj Caterers">
-                        </a>
+              <ul class="contact-info-list">
+                <li>
+                  Ramraksha, 3rd floor, Anandnagar, Old Sanghvi Pune,
+                  Maharashtra
+                </li>
+                <li><span>RESERVATIONS NUMBER:</span> +91- 95119 90088</li>
+              </ul>
+            </div>
+            <!-- .col-md-4 end -->
 
-                        <ul class="contact-info-list">
-                            <li>
-                                22 Royal Street, Sundance Avenue, New York
-                            </li>
-                            <li>
-                                <span>RESERVATIONS NUMBER:</span> +00 25 854 78521
-                            </li>
+            <!-- .col-md-4 start -->
+            <div class="col-md-4"></div>
+            <!-- .col-md-4 end-->
+          </div>
+          <!-- .row end -->
 
-                            <li>
-                                <span>WORKING HOURS:</span>
-                            </li>
-
-                            <li>
-                                MON- FRI: 08:00 AM - 10:00 PM
-                            </li>
-                            <li>SAT - SUN: 10:00 AM - 11:00 PM</li>
-                        </ul>
-                    </div><!-- .col-md-4 end -->
-
-                    <!-- .col-md-4 start -->
-                    <div class="col-md-4">
-
-                    </div><!-- .col-md-4 end-->
-                </div><!-- .row end -->
-
-                <!-- .row start -->
-                <div class="row mb-40">
-                    <!-- .col-md-6 start -->
-                    <div class="col-md-6">
-
-                        <!-- .social-links start -->
-                        <ul class="social-links">
-                            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                            <li><a href="#"><i class="fa fa-instagram"></i></a></li>
-                            <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-                        </ul><!-- .social-links end -->
-                    </div><!-- .col-md-6 end -->
-
-                    <!-- .col-md-6 start -->
-                    <div class="col-md-6">
-                        <!-- .newsletter start -->
-                        <form class="newsletter">
-                            <input class="email" type="email" placeholder="Subscribe to our newsletter feed:">
-                            <input type="submit" class="submit" value="Submit">
-                        </form><!-- .newsletter end -->
-                    </div><!-- .col-md-6 end -->
-                </div><!-- .row end -->
-            </div><!-- .container end -->
-        </footer><!-- #footer end -->
-    </div><!-- #footer-wrapper end -->
+          <!-- .row start -->
+          <div class="row mb-40">
+            <!-- .col-md-6 start -->
+            <div class="col-md-6">
+              <!-- .social-links start -->
+              <ul class="social-links">
+                <li>
+                  <a href="#"><i class="fa fa-facebook"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fa fa-twitter"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fa fa-instagram"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fa fa-linkedin"></i></a>
+                </li>
+              </ul>
+              <!-- .social-links end -->
+            </div>
+            <!-- .col-md-6 end -->
+          </div>
+          <!-- .row end -->
+        </div>
+        <!-- .container end -->
+      </footer>
+      <!-- #footer end -->
+    </div>
+    <!-- #footer-wrapper end -->
 
     <!-- #copyright-container start -->
     <div id="copyright-container">
-        <!-- .container start -->
-        <div class="container">
-            <!-- .row start -->
-            <div class="row">
-                <!-- .col-md-6 start -->
-                <div class="col-md-6">
-                    <p>©  Gajraj Caterers 2020. All rights reserved.</p>
-                </div><!-- .col-md-6 end -->
+      <!-- .container start -->
+      <div class="container">
+        <!-- .row start -->
+        <div class="row">
+          <!-- .col-md-6 start -->
+          <div class="col-md-6">
+            <p>© Gajraj Caterers 2020. All rights reserved.</p>
+          </div>
+          <!-- .col-md-6 end -->
 
-                <!-- .col-md-6 start -->
-                <div class="col-md-6">
-                    <ul class="breadcrumb">
-                        <li><a href="/">Home</a></li>
-                        <li><a href="/about">About</a></li>
-                        <li><a href="/menu">Menu</a></li>
-                        <li><a href="/catering">Catering</a></li>
-                        <li><a href="/gallery">Gallery</a></li>
-                        <li><a href="/contact">Contact</a></li>
-                    </ul>
-                </div><!-- .col-md-6 end -->
-            </div><!-- .row end -->
-        </div><!-- .container end -->
+          <!-- .col-md-6 start -->
+          <div class="col-md-6">
+            <ul class="breadcrumb">
+              <li><a href="/">Home</a></li>
+              <li><a href="/about">About</a></li>
+              <li><a href="/menu">Menu</a></li>
+              <li><a href="/catering">Catering</a></li>
+              <li><a href="/menu">Menu</a></li>
+              <li><a href="/gallery">Gallery</a></li>
+              <li><a href="/contact">Contact</a></li>
+            </ul>
+          </div>
+          <!-- .col-md-6 end -->
+        </div>
+        <!-- .row end -->
+      </div>
+      <!-- .container end -->
 
-        <a href="#" class="scroll-up"><i class="fa fa-angle-double-up"></i></a>
+      <a href="#" class="scroll-up"><i class="fa fa-angle-double-up"></i></a>
+    </div>
+    <!-- .copyright-container end -->
 
-    </div><!-- .copyright-container end -->
+    <script>
+      var modal = document.getElementById("myModal");
 
-    <script src="js/jquery-2.1.4.min.js"></script><!-- jQuery library -->
-    <script src="js/bootstrap.min.js"></script><!-- .bootstrap script -->
-    <script src="js/jquery.scripts.min.js"></script><!-- modernizr, retina, stellar for parallax -->
-    <script src="js/jquery.dlmenu.min.js"></script><!-- for responsive menu -->
-    <script src="js/include.js"></script><!-- custom js functions -->
-    <script src="js/TweenMax.min.js"></script> <!-- Plugin for smooth scrolling-->
-    <script src="js/ScrollToPlugin.min.js"></script> <!-- Plugin for smooth scrolling-->
-</body>
+      const moreDetails = document.getElementById("moreDetails");
+      const moreDetails1 = document.getElementById("moreDetails1");
+      const moreDetails2 = document.getElementById("moreDetails2");
+
+      // Get the <span> element that closes the modal
+      var span = document.getElementsByClassName("close")[0];
+
+      // When the user clicks on <span> (x), close the modal
+      span.onclick = function () {
+        modal.style.display = "none";
+      };
+
+      moreDetails.onclick = function () {
+        modal.style.display = "block";
+      };
+      moreDetails1.onclick = function () {
+        modal.style.display = "block";
+      };
+      moreDetails2.onclick = function () {
+        modal.style.display = "block";
+      };
+
+      // When the user clicks anywhere outside of the modal, close it
+      window.onclick = function (event) {
+        if (event.target == modal) {
+          modal.style.display = "none";
+        }
+      };
+    </script>
+
+    <script src="js/jquery-2.1.4.min.js"></script>
+    <!-- jQuery library -->
+    <script src="js/bootstrap.min.js"></script>
+    <!-- .bootstrap script -->
+    <script src="js/jquery.scripts.min.js"></script>
+    <!-- modernizr, retina, stellar for parallax -->
+    <script src="js/jquery.dlmenu.min.js"></script>
+    <!-- for responsive menu -->
+    <script src="js/include.js"></script>
+    <!-- custom js functions -->
+    <script src="js/TweenMax.min.js"></script>
+    <!-- Plugin for smooth scrolling-->
+    <script src="js/ScrollToPlugin.min.js"></script>
+    <!-- Plugin for smooth scrolling-->
+  </body>
 </html>

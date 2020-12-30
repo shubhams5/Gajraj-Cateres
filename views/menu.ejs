@@ -1,1148 +1,848 @@
 <!DOCTYPE html>
 
 <html>
-
-<head>
-    <meta charset="utf-8">
+  <head>
+    <meta charset="utf-8" />
     <title>Gajraj Caterers</title>
-    <meta name="author" content="Logyana Solutions">
-    <meta name="keywords" content="CSS, HTML5, clean, restaurant, jQuery, retina, bootstrap">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Logyana Solutions" />
+    <meta
+      name="keywords"
+      content="CSS, HTML5, clean, restaurant, jQuery, retina, bootstrap"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <!-- Stylesheets -->
-    <link rel="stylesheet" href="css/bootstrap.min.css" /><!-- bootstrap grid -->
-    <link rel="stylesheet" href="css/bootstrap-theme.min.css" /><!-- bootstrap theme -->
-    <link rel="stylesheet" href="css/style.css" /><!-- template styles -->
-    <link rel="stylesheet" href="css/color-default.css" /><!-- default template color styles -->
-    <link rel="stylesheet" href="css/retina.css" /><!-- retina ready styles -->
-    <link rel="stylesheet" href="css/responsive.css" /><!-- responsive styles -->
-    <link rel="stylesheet" href="css/animate.css" /><!-- animation for content -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <!-- bootstrap grid -->
+    <link rel="stylesheet" href="css/bootstrap-theme.min.css" />
+    <!-- bootstrap theme -->
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- template styles -->
+    <link rel="stylesheet" href="css/color-default.css" />
+    <!-- default template color styles -->
+    <link rel="stylesheet" href="css/retina.css" />
+    <!-- retina ready styles -->
+    <link rel="stylesheet" href="css/responsive.css" />
+    <!-- responsive styles -->
+    <link rel="stylesheet" href="css/animate.css" />
+    <!-- animation for content -->
 
     <!-- Google Web fonts -->
-    <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Suranna' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Montez' rel='stylesheet' type='text/css'>
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat:400,700"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Suranna"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Montez"
+      rel="stylesheet"
+      type="text/css"
+    />
 
     <!-- Font icons -->
-    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css" /><!-- Font awesome icons -->
-</head>
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css" />
+    <!-- Font awesome icons -->
+    <script
+      src="https://kit.fontawesome.com/a71853c901.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
 
-<body>
+  <body>
     <div class="icon-bar">
-        <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
-        <a href="#" class="instagram"><i class="fa fa-instagram"></i></a>
-        <a href="#" class="phone"><i class="fa fa-phone"></i></a>
-        <a href="#" class="envelope"><i class="fa fa-envelope"></i></a>
+      <a
+        href="https://facebook.com/GajrajCaterer/"
+        class="facebook"
+        target="_blank"
+      >
+        <i class="fa fa-facebook"></i>
+      </a>
+      <a
+        href="https://www.instagram.com/gajrajcaterers/"
+        class="instagram"
+        target="_blank"
+      >
+        <i class="fa fa-instagram"></i>
+      </a>
+      <a href="tel:+91-9511990088" class="phone"><i class="fa fa-phone"></i></a>
+      <a
+        href="https://api.whatsapp.com/send?phone=9511990088"
+        class="whatsapp"
+        target="_blank"
+      >
+        <i class="fa fa-whatsapp" style="font-size: 23px"></i>
+      </a>
     </div>
     <!-- .header-wrapper start -->
     <div id="header-wrapper">
-        <!-- #header start -->
-        <header id="header">
+      <!-- #header start -->
+      <header id="header">
+        <!-- Main navigation and logo container -->
+        <div class="header-inner">
+          <!-- .container start -->
+          <div class="container">
+            <!-- .main-nav start -->
+            <div class="main-nav">
+              <!-- .row start -->
+              <div class="row">
+                <div class="col-md-12">
+                  <!-- .navbar start -->
+                  <nav class="navbar navbar-default nav-left">
+                    <!-- .navbar-header start -->
+                    <div class="navbar-header">
+                      <!-- .logo start -->
+                      <div class="logo">
+                        <a href="/">
+                          <img src="img/logo.png" style="width:150px"
+                          "height:80px" alt="Gajraj Caterers">
+                        </a>
+                      </div>
+                      <!-- logo end -->
+                    </div>
+                    <!-- .navbar-header end -->
 
-            <!-- Main navigation and logo container -->
-            <div class="header-inner">
-                <!-- .container start -->
-                <div class="container">
-                    <!-- .main-nav start -->
-                    <div class="main-nav">
-                        <!-- .row start -->
-                        <div class="row">
-                            <div class="col-md-12">
-                                <!-- .navbar start -->
-                                <nav class="navbar navbar-default nav-left">
+                    <!-- Collect the nav links, forms, and other content for toggling -->
+                    <div class="collapse navbar-collapse">
+                      <ul class="nav navbar-nav pi-nav">
+                        <li class="dropdown">
+                          <a href="/">Home</a>
+                        </li>
 
-                                    <!-- .navbar-header start -->
-                                    <div class="navbar-header">
-                                        <!-- .logo start -->
-                                        <div class="logo">
-                                            <a href="/">
-                                                <img src="img/logo.png" style="width:150px" "height:80px"
-                                                    alt="Gajraj Caterers">
-                                            </a>
-                                        </div><!-- logo end -->
-                                    </div><!-- .navbar-header end -->
+                        <li class="dropdown"><a href="/about">About</a></li>
 
-                                    <!-- Collect the nav links, forms, and other content for toggling -->
-                                    <div class="collapse navbar-collapse">
-                                        <ul class="nav navbar-nav pi-nav">
-                                            <li class="dropdown">
-                                                <a href="/">Home</a>
-                                            </li>
+                        <li class="dropdown current-menu-item">
+                          <a href="/catering">Catering</a>
+                          <ul class="dropdown-menu">
+                            <li><a href="/catering">Catering</a></li>
+                            <li><a href="/menu">Menu</a></li>
+                          </ul>
+                          <!-- .dropdown-menu end -->
+                        </li>
 
-                                            <li class="dropdown"><a href="/about">About</a>
+                        <li>
+                          <a href="/gallery">Gallery</a>
+                        </li>
 
-                                            </li>
+                        <li>
+                          <a href="/contact">Contact</a>
+                        </li>
+                      </ul>
+                      <!-- .nav.navbar-nav.pi-nav end -->
 
-                                            <li class="dropdown current-menu-item">
-                                                <a href="/catering">Catering</a>
-                                                <ul class="dropdown-menu">
-                                                    <li><a href="/catering">Catering</a></li>
-                                                    <li><a href="/menu">Menu</a></li>
-                                                </ul><!-- .dropdown-menu end -->
-                                            </li>
+                      <!-- Responsive menu start -->
+                      <div id="dl-menu" class="dl-menuwrapper">
+                        <button class="dl-trigger"></button>
 
-                                            <li>
-                                                <a href="/gallery">Gallery</a>
-                                            </li>
+                        <ul class="dl-menu">
+                          <li>
+                            <a href="/">Home</a>
+                          </li>
+                          <!-- Home li end -->
 
-                                            <li>
-                                                <a href="/contact">Contact</a>
-                                            </li>
-                                        </ul><!-- .nav.navbar-nav.pi-nav end -->
+                          <li>
+                            <a href="/about">About</a>
+                          </li>
+                          <!-- About li end -->
 
-                                        <!-- Responsive menu start -->
-                                        <div id="dl-menu" class="dl-menuwrapper">
-                                            <button class="dl-trigger">Open Menu</button>
-
-                                            <ul class="dl-menu">
-                                                <li>
-                                                    <a href="#">Home</a>
-                                                    <ul class="dl-submenu">
-                                                        <li><a href="/home">Home page</a></li>
-                                                    </ul><!-- .dl-submenu end -->
-                                                </li><!-- Home li end -->
-
-                                                <li>
-                                                    <a href="/about">About</a>
-                                                </li><!-- About li end -->
-
-                                                <li>
-                                                    <a href="/menu">Menu</a>
-                                                </li><!-- Menu li end -->
-                                                <li>
-                                                    <a href="/catering">Catering</a>
-                                                </li><!-- Catering li end -->
-                                                <li>
-                                                    <a href="/gallery">Gallery</a>
-                                                </li><!-- Gallery li end -->
-                                                <li>
-                                                    <a href="/contact">Contact</a>
-                                                </li><!-- Contact li end -->
-
-                                            </ul><!-- .dl-menu end -->
-                                        </div><!-- (Responsive menu) #dl-menu end -->
-                                    </div><!-- .navbar.navbar-collapse end -->
-                                </nav><!-- .navbar end -->
-                            </div><!-- .col-md-12 end -->
-                        </div><!-- .row end -->
-                    </div><!-- .main-nav end -->
-                </div><!-- .container end -->
-            </div><!-- .header-inner end -->
-        </header><!-- #header end -->
-    </div><!-- #header-wrapper end -->
+                          <li>
+                            <a href="/menu">Menu</a>
+                          </li>
+                          <!-- Menu li end -->
+                          <li>
+                            <a href="/catering">Catering</a>
+                          </li>
+                          <!-- Catering li end -->
+                          <li>
+                            <a href="/gallery">Gallery</a>
+                          </li>
+                          <!-- Gallery li end -->
+                          <li>
+                            <a href="/contact">Contact</a>
+                          </li>
+                          <!-- Contact li end -->
+                        </ul>
+                        <!-- .dl-menu end -->
+                      </div>
+                      <!-- (Responsive menu) #dl-menu end -->
+                    </div>
+                    <!-- .navbar.navbar-collapse end -->
+                  </nav>
+                  <!-- .navbar end -->
+                </div>
+                <!-- .col-md-12 end -->
+              </div>
+              <!-- .row end -->
+            </div>
+            <!-- .main-nav end -->
+          </div>
+          <!-- .container end -->
+        </div>
+        <!-- .header-inner end -->
+      </header>
+      <!-- #header end -->
+    </div>
+    <!-- #header-wrapper end -->
 
     <!-- .page-content start -->
-    <div class="page-content custom-img-background dark page-title page-title-3 mb-100">
-        <div class="container">
-            <!-- .row start -->
-            <div class="row">
-                <!-- .col-md-12 start -->
-                <div class="col-md-12 centered">
-                    <div class="custom-heading style-1 triggerAnimation animated" data-animate='fadeInUp'>
-                        <h1><span>Delicious Cousine</span></h1>
-                        <h1>Discover the menu</h1>
-                    </div><!-- .custom-heading.style-1 end -->
-                </div><!-- .col-md-12 end -->
-            </div><!-- .row end -->
-        </div><!-- .container end -->
-    </div><!-- .page-content end -->
+    <div
+      class="page-content custom-img-background dark page-title page-title-3 mb-100"
+    >
+      <div class="container">
+        <!-- .row start -->
+        <div class="row">
+          <!-- .col-md-12 start -->
+          <div class="col-md-12 centered">
+            <div
+              class="custom-heading style-1 triggerAnimation animated"
+              data-animate="fadeInUp"
+            >
+              <h1><span>Delicious Cousine</span></h1>
+              <h1>Discover the menu</h1>
+            </div>
+            <!-- .custom-heading.style-1 end -->
+          </div>
+          <!-- .col-md-12 end -->
+        </div>
+        <!-- .row end -->
+      </div>
+      <!-- .container end -->
+    </div>
+    <!-- .page-content end -->
 
     <!-- .page-content start -->
     <div class="page-content bkg-img14 bkg-img-contain">
-        <div class="container">
-            <!-- .row start -->
-            <div class="row mb-40">
-                <!-- .col-md-12 start -->
-                <div class="col-md-12 centered mb-0">
-                    <div class="custom-heading style-1">
-                        <h3><span>The menu</span></h3>
-                        <h3>Welcome to Gajraj Caterers</h3>
+      <div class="container">
+        <!-- .row start -->
+        <div class="row mb-40">
+          <!-- .col-md-12 start -->
+          <div class="col-md-12 centered mb-0">
+            <div class="custom-heading style-1">
+              <h3><span>The menu</span></h3>
+              <h3>Welcome to Gajraj Caterers</h3>
 
-                        <!-- .divider.style-1 start -->
-                        <div class="divider style-1 center">
-                            <span class="hr-simple left"></span>
-                            <i class="fa fa-circle hr-icon"></i>
-                            <span class="hr-simple right"></span>
-                        </div>
-                    </div><!-- .custom-heading.style-1 end -->
-                </div><!-- .col-md-12 end -->
-                <!-- .col-md-12 start -->
-                <div class="col-md-12 centered mb-0">
-                    <p>Keith Simons, chef de cousine in Gajraj Caterers has prepared some delicious starters for
-                        every taste. Try some of our home made soups made from fresh ingredients or some of
-                        our refreshing salads. Bon appetit!</p>
-                </div><!-- .col-md-12 end -->
-            </div><!-- .row end -->
-            <!-- .row start -->
-            <div class="row mb-20 menu-background">
-                <!-- .col-md-6 start -->
-                <div class="col-md-6 menu-left-shadow">
-                    <div class="custom-heading style-2">
-                        <h4>Starters</h4>
-                        <div class="divider style-1">
-                            <i class="fa fa-circle hr-icon left"></i>
-                            <span class="hr-simple right"></span>
-                        </div>
-                    </div><!-- .custom-heading.style-2 end -->
-                    <ul class="menu-style-2">
-                        <li>
-                            <h5>Soups</h5>
-                        </li>
-                        <li class="menu-item">
-                            <div class="menu-item-title">
-                                <p>INDIAN</p>
-                                <span class="dotted-line"></span>
-                            </div>
-                            <div class="menu-item-description">
-                                <p>Dahi ka Shorba<br>Subz shahi Shorba<br>Dal Shorba<br> Dhaniya adrak ka Shorba <br> Corn Alapino shorba <br>
-                                    Mullligatawney<br> Tomato Jasmine Tea.</p>
-                            </div>
-                           
-                        </li>
-                        <li class="menu-item">
-                            <div class="menu-item-title">
-                                <p> ASIAN SOUPS</p>
-                                <span class="dotted-line"></span>  
-                            </div>
-                            <div class="menu-item-description">
-                                <p>Miso cottage cheese soup <br> Vegetable tom yum soup <br> Sweet corn and pepper chowder <br> Veg. Manchow Soup <br> Lang fang soup <br> Spring Lemon Soup <br> Asian Wanton Soup<br> Lemon Coriander Soup.</p>
-                            </div>
-                            
-                            
-                        </li>
-                        <li class="menu-item">
-                            <div class="menu-item-title">
-                                <p>ITALIAN AND CONTINENTAL</p>
-                                <span class="dotted-line"></span>
-                            </div>
-                            <div class="menu-item-description">
-                                <p>Classical minestrone <br>Herbed summer vegetable broth <br> Tomato basil soup<br> Cream Of Soup (Choice)<br> Parmentier Potato Soup with Croutons <br> Cream of Pumpkin Soup with Roast Pumpkin Seeds <br> Potato and leek soup<br> Beer & Cheddar <br>Cream of Potato<br>Butternut Bisque<br>German Beer Stew<br>Cream of Asparagus<br>Potato Corn Chowder<br>Shaker Bean Chowder<br>Shaker Bean Chowder<br>Potato Corn Chowder<br>Cream of Broccoli.</p>
-                            </div>
-                        </li>
-                        <li class="menu-item">
-                            <div class="menu-item-title">
-                                <p>SOUTH INDIAN</p>
-                                <span class="dotted-line"></span>
-                            </div>
-                            <div class="menu-item-description">
-                                <p>Tomato saar <br>Dal Rasam <br> Peper Soup<br> Spinach Lentil Soup</p>
-                            </div>
-                        </li>
-                        
-                        
-                        
-                        <li>
-                            <h5>SALADS</h5>
-                        </li>
-                        <li class="menu-item">
-                            <div class="menu-item-title">
-                                <p>INDIAN</p>
-                                <span class="dotted-line"></span>
-                            </div>
-                            <div class="menu-item-description">
-                                <p>Green salad<br>Papdi chaat<br>Aloo chaat<br>Aloo papdi chaat<br>All Type Raita<br>Dil cucumber<br>Tadka dahi<br>Dahi ke bhale <br>Corn and pineapple salad.</p>
-                            </div>
-                        </li>
-                        <li class="menu-item">
-                            <div class="menu-item-title">
-                                <p>ASIAN SOUPS</p>
-                                <span class="dotted-line"></span>
-                            </div>
-                            <div class="menu-item-description">
-                                <p>Thai Glass Noodles with Coriander<br>
-                                    Mixed Green Salad with Assorted Dressings<br>
-                                    Mussel Salad with Chili Lime Dressing<br>
-                                    Som tam salad<br>
-                                    Kimchi salad<br>
-                                    Oriental style rice papper salad.</p>
-                            </div>
-                        </li>
-                        <li class="menu-item">
-                            <div class="menu-item-title">
-                                <p>ITALIAN AND CONTINENTAL</p>
-                                <span class="dotted-line"></span>
-                            </div>
-                            <div class="menu-item-description">
-                                <p>Ceasar salad<br> 
-                                    Greek salad<br>
-                                    Insalata mista<br> 
-                                    Italian pasta salad<br>
-                                    Tossed Salad<br>
-                                    Russian salad<br>
-                                    Beans Sprout Salad<br>
-                                    Waldorf salad<br>
-                                    Coleslaw salad<br>
-                                    Salad of baby potatoes with Dijon mustard<br>
-                                    German potato salad with streaky bacon and scallion<br>
-                                    Roasted beetroot salad with honey and lemon vinaigrette<br>
-                                    Gado gado salad<br>
-                                    Beet root and feta chees salad<br>
-                                    Watermelon With feta cheese.
-                                    </p>
-                            </div>
-                        </li>
-                    </ul>
-                    <ul class="menu-style-2">
-                        <li>
-                            <h5>APPITIZERS VEG</h5>
-                        </li>
-                        <li class="menu-item">
-                            <div class="menu-item-title">
-                                <p>INDIAN</p>
-                                <span class="dotted-line"></span>
-                            </div>
-                            <div class="menu-item-description">
-                                <p>Herbed Paneer tikka<br>
-                                    Paneer chutney wale<br>
-                                   Paneer peshwari tikka<br>
-                                   Vegetable seekh kebab<br>
-                                   Aloo Kalimiri<br>
-                                   Aloo  Corn  ki Tikki<br>
-                                   Aloo hare pyaz ki Tikki<br>
-                                   Paneer Zaffrani<br>
-                                    Paneer tikka <br>
-                                   Tandoori  Aloo<br>
-                                   Aloo soya bean ki Tikki<br>
-                                   Paneer seekh<br>
-                                   Hara bhara kebab<br>
-                                   dahi ke kabab<br>
-                                   mutter ke kabab<br>
-                                   Tandoori Gobi<br>
-                                   Smoked brocoly florets<br>
-                                   Reshmi paneer tikka<br>
-                                   Paneer mirch tikka<br>
-                                   Paneer ka shula<br>
-                                   Paneer akhrot ki seekh<br>
-                                   Multani paneer tikka<br>
-                                   Paneer in imperial green souce<br>
-                                   Charmula cottage cheese<br>
-                                   Mutani mushroom <br>
-                                   Paneer malai tikka.                                   
-                                    </p>
-                            </div> 
-                        </li>
-                        <li>
-                        <div class="menu-item-title">
-                            <p>ASIAN FOOD</p>
-                            <span class="dotted-line"></span>
-                        </div>
-                        <div class="menu-item-description">
-                            <p>Veg. Crispy<br>
-                                Paneer 65<br>
-                                Paneer salt and papper<br>
-                                Paneer Chilly<br>
-                                Mushroom and Baby Corn Chilly<br>
-                                                              
-                                </p>
-                        </div> 
-                    </li>
-                    <li>
-                        <div class="menu-item-title">
-                            <p>ITALIAN AND CONTINENTAL</p>
-                            <span class="dotted-line"></span>
-                        </div>
-                        <div class="menu-item-description">
-                            <p>Corn and cheese croquettes<br>
-                                Corn cheese ball<br>
-                                Cheese chilly tarts<br>
-                                Olive and pepper tarts<br>
-                                 Basil and tomato tarts<br>
-                                Herbed tomato Bruschetta<br>
-                                Frommagio fritto<br>
-                                 Potate Torminant<br>
-                                Mushroom jarina<br>
-                                stuffed chees mushroom<br>
-                                B.B.Q potao<br>
-                                Spinach deep<br>
-                                Nachos With Cheese<br>
-                                Tomato Bruchetta<br>
-                                special Tacos<br>
-                                Onion Rings<br>
-                                Quesaddala                                
-                                                              
-                                </p>
-                        </div> 
-                    </li>
-                        </ul>
-                </div><!-- .col-md-6 end -->
-                <!-- .col-md-6 start -->
-                <div class="col-md-6 menu-right-shadow">
-                    <div class="custom-heading style-2">
-                        <h4>Main dishes</h4>
-                        <div class="divider style-1">
-                            <i class="fa fa-circle hr-icon left"></i>
-                            <span class="hr-simple right"></span>
-                        </div>
-                    </div><!-- .custom-heading.style-2 end -->
-                    <ul class="menu-style-2">
-                        <li>
-                            <h5>VEG MAIN COURSE</h5>
-                        </li>
-                        <li class="menu-item">   
-                            <div class="menu-item-title">
-                                <p>INDIAN</p>
-                                <span class="dotted-line"></span>
-                            </div>
-                            
-                            <div class="menu-item-description">
-                                <p>Kadhai Paneer<br>
-                                    Shahi Paneer<br>
-                                    Paneer Methi Masala<br>
-                                    Paneer Kofta<br>
-                                    Paneer Lasooni<br>
-                                     Pindi Chhole<br>
-                                    Chana raunakdar<br>
-                                    Paneer badami<br>
-                                    Aloo Mutter<br>
-                                    Aloo Methi<br>
-                                    Dum Aloo Kashmiri<br>
-                                    Shahi Dum Aloo<br>
-                                    Makai Palak<br>
-                                    Subz Handi<br>
-                                    Subz Lajawab<br>
-                                    Mirch baingan Ka Salan<br>
-                                    Subz Hyderabadi<br>
-                                    Subz Lababdar<br>
-                                    Mashed Potatoes<br>
-                                    Subj chilli milli<br>
-                                    Tawa kuchan<br>
-                                    Veg bhuna<br>
-                                    Paneer makai ka shweta<br>
-                                    Hari mirch ka salan<br>
-                                    Gate ka saag<br>
-                                    Rajastani mirchi ki kadi<br>
-                                    Mangodi ki subji<br>
-                                    Veg keema lababadar<br>
-                                    Paneer pasanda<br>
-                                    Lakhnawai paneeer korma<br>
-                                    Sarso ka saag<br>
-                                    Paneer lazeez<br>
-                                    Dilli ke kumb<br>
-                                    Paneer hot garlic souce<br>
-                                    Mushroom butter garlic souce<br>
-                                    Star fry vegetable in black bean souce<br>
-                                    Veg kofta<br>
-                                    Veg nargisi kofta<br>
-                                    Anjeer ke kofta<br>
-                                    Spinach of cannaloni with mushroom & thyme<br> 
-                                    Baked Corn, Mushroom and Spinach <br>
-                                    Veg shyam sabera<br>
-                                    Bilayati subji<br>
-                                    Bhareli wangi<br>
-                                    Lassoni palak<br>
-                                    Methi chaman
-                                    </p>
-                            </div>
-                        </li>
-                        <li class="menu-item">   
-                            <div class="menu-item-title">
-                                <p>ASIAN FOOD</p>
-                                <span class="dotted-line"></span>
-                            </div>
-                            
-                            <div class="menu-item-description">
-                                <p>Burnt Garlic Fried Rice <br>
-                                    Ginger Mushroom Rice <br>
-                                    Veg Fried Rice<br>
-                                    Phad Thai Noodles <br>
-                                    Hong Kong Noodles<br>
-                                    Burnt Chilli Noodles <br>
-                                    Cilantro Sauce<br>
-                                    Penut Sauce <br>
-                                    Schezwan Sauce <br>
-                                    Sweet Chilli Sauce <br>
-                                    Thai Green Curry <br>
-                                    Thai Red&Yellow curry<br> 
-                                    Live Mongolian Counter
-                                    
-                                    </p>
-                            </div>
-                        </li>
-                        <li class="menu-item">   
-                            <div class="menu-item-title">
-                                <p>ITALIAN AND CONTINENTAL</p>
-                                <span class="dotted-line"></span>
-                            </div>
-                            
-                            <div class="menu-item-description">
-                                <p>Grilled cottage cheese with pepper sauce<br>
-                                    Cauliflower broccoli mornay sauce<br>
-                                    Baked vegetable rosey sauce<br>
-                                    Veg Moussaka<br>
-                                     Veg lasagna<br>
-                                    Grilled cottage cheese BBQ sauce<br>
-                                    Roast mix Vegetables<br>
-                                     Vegetable au gratin<br>
-                                    Mashed Potato with Garlic and cheese<br>
-                                    Enchilladas<br>
-                                    
-                                    
-                                    </p>
-                            </div>
-                        </li>
-                        <li class="menu-item">
-                            <div class="menu-item-title">
-                                <p>DAL</p>
-                                <span class="dotted-line"></span>
-                            </div>
-                            
-                            <div class="menu-item-description">
-                                <p>Dal tadka / Dal fry /Dal Palak <br>
-                                    / Dal pacharatni / Rajma Masala. Kadi Pakoda
-                                    </p>
-                            </div>
-                        </li>
-                        <li class="menu-item">
-                            <div class="menu-item-title">
-                                <p>RICE</p>
-                                <span class="dotted-line"></span>
-                            </div>
-                            
-                            <div class="menu-item-description">
-                                <p>Steam rice / jeera pulao / Peas pulao / Veg <br>
-                                    Pulao. Dal Khichdi<br>
-                                    Fried Rice with Seafood / Noodles<br>
-                                    Biryani (All)<br>
-                                    Portuguese fried rice<br>
-                                    Phad thai noodles<br>
-                                    Mexican rice / Rissoto<br>
-                                    </p>
-                            </div>
-                        </li>
-                        <li class="menu-item">
-                            <div class="menu-item-title">
-                                <p>BREADS</p>
-                                <span class="dotted-line"></span>
-                            </div>
-                            
-                            <div class="menu-item-description">
-                                <p>Assorted Roti<br>
-                                    Bread Roll<br>
-                                    Garlic Bread<br>
-                                    
-                                    </p>
-                            </div>
-                        </li>
-                        <li class="menu-item">
-                            <div class="menu-item-title">
-                                <p>LIVE COUNTER</p>
-                                <span class="dotted-line"></span>
-                            </div>
-                            
-                            <div class="menu-item-description">
-                                <p>Pasta / Pizza<br>
-                                    Chinese / Mangolian<br> 
-                                    Chaat<br>
-                                    Appam / dosa / tatte idli<br>
-                                    Crespelle Counter<br>
-                                    Kheema pav<br>
-                                    Labanese<br>
-                                    Pav Bhaji<br>
-                                    Live Salad Bar<br>
-                                    Chole Kulcha / Bhature<br>
-                                    Doller Jellebi with Rabdi<br>
-                                    
-                                    </p>
-                            </div>
-                        </li>
-                    </ul>
-                    <div class="custom-heading style-2">
-                        <h4>Deserts</h4>
-                        <div class="divider style-1">
-                            <i class="fa fa-circle hr-icon left"></i>
-                            <span class="hr-simple right"></span>
-                        </div>
-                    </div><!-- .custom-heading.style-2 end -->
-                    <ul class="menu-style-2">
-                        <li class="menu-item">
-                            
-                            <div class="menu-item-description">
-                                <p>Gulab Jamun<br>
-                                    Mix Fruit Mouuse<br>
-                                   Fruit Tart<br>
-                                    Gajar Halwa<br>
-                                   Sewaiya Kheer<br>
-                                    Phirni<br>
-                                    Pastry<br>
-                                    Chocolate brownie<br>
-                                   Malpua with rabdi<br>
-                                   Mango mousse<br>
-                                   Chocolate Mousse<br>
-                                    Vanilla ice cream with Hcs<br>
-                                   Assortment of Fresh Fruits<br>
-                                   Coconut Payasam<br>
-                                   Chocolate Devil Cake<br>
-                                   Blueberry Cheese Cake<br>
-                                   Cheese Cake<br>
-                                   Cream Caramel<br>
-                                   Bread Butter Pudding<br>
-                                   Red Velvet Cake<br>
-                                   Mini Cho Bomb<br>
-                                   Panna cota<br>
-                                   Tiramissu<br>
-                                   </p>
-                            </div>
-                        </li>
-                    </ul>
-                </div><!-- .col-md-6 end -->
-            </div><!-- .row end -->
-            <!-- .row start -->
-            <div class="row">
-                <div class="col-md-12 centered triggerAnimation animated" data-animate='fadeInUp'>
-                    <a href="#" class="btn btn-big black"><span>Download menu (pdf)</span></a>
+              <!-- .divider.style-1 start -->
+              <div class="divider style-1 center">
+                <span class="hr-simple left"></span>
+                <i class="fa fa-circle hr-icon"></i>
+                <span class="hr-simple right"></span>
+              </div>
+            </div>
+            <!-- .custom-heading.style-1 end -->
+          </div>
+          <!-- .col-md-12 end -->
+          <!-- .col-md-12 start -->
+          <div class="col-md-12 centered mb-0">
+            <p>
+              Gajraj Caterers has prepared some delicious starters for every
+              taste. Try some of our home made soups made from fresh ingredients
+              or some of our refreshing salads. Bon appetit!
+            </p>
+          </div>
+          <!-- .col-md-12 end -->
+        </div>
+        <!-- .row end -->
+        <!-- .row start -->
+        <div class="row mb-20 menu-background">
+          <!-- .col-md-6 start -->
+          <div class="col-md-6 menu-left-shadow">
+            <div class="custom-heading style-2">
+              <h4>Starters</h4>
+              <div class="divider style-1">
+                <i class="fa fa-circle hr-icon left"></i>
+                <span class="hr-simple right"></span>
+              </div>
+            </div>
+            <!-- .custom-heading.style-2 end -->
+            <ul class="menu-style-2">
+              <li>
+                <h5>Soups</h5>
+              </li>
+              <li class="menu-item">
+                <div class="menu-item-title">
+                  <p>INDIAN</p>
+                  <span class="dotted-line"></span>
                 </div>
-            </div><!-- .row end -->
-        </div><!-- .container end -->
-    </div><!-- .page-content end -->
+                <div class="menu-item-description">
+                  <p>
+                    Dahi ka Shorba<br />Subz shahi Shorba<br />Dal Shorba<br />
+                    Dhaniya adrak ka Shorba <br />
+                    Corn Alapino shorba <br />
+                    Mullligatawney<br />
+                    Tomato Jasmine Tea.
+                  </p>
+                </div>
+              </li>
+              <li class="menu-item">
+                <div class="menu-item-title">
+                  <p>ASIAN SOUPS</p>
+                  <span class="dotted-line"></span>
+                </div>
+                <div class="menu-item-description">
+                  <p>
+                    Miso cottage cheese soup <br />
+                    Vegetable tom yum soup <br />
+                    Sweet corn and pepper chowder <br />
+                    Veg. Manchow Soup <br />
+                    Lang fang soup <br />
+                    Spring Lemon Soup <br />
+                    Asian Wanton Soup<br />
+                    Lemon Coriander Soup.
+                  </p>
+                </div>
+              </li>
+              <li class="menu-item">
+                <div class="menu-item-title">
+                  <p>ITALIAN AND CONTINENTAL</p>
+                  <span class="dotted-line"></span>
+                </div>
+                <div class="menu-item-description">
+                  <p>
+                    Classical minestrone <br />Herbed summer vegetable broth
+                    <br />
+                    Tomato basil soup<br />
+                    Cream Of Soup (Choice)<br />
+                    Parmentier Potato Soup with Croutons <br />
+                    Cream of Pumpkin Soup with Roast Pumpkin Seeds <br />
+                    Potato and leek soup<br />
+                    Beer & Cheddar <br />Cream of Potato<br />Butternut
+                    Bisque<br />German Beer Stew<br />Cream of Asparagus<br />Potato
+                    Corn Chowder<br />Shaker Bean Chowder<br />Shaker Bean
+                    Chowder<br />Potato Corn Chowder<br />Cream of Broccoli.
+                  </p>
+                </div>
+              </li>
+              <li class="menu-item">
+                <div class="menu-item-title">
+                  <p>SOUTH INDIAN</p>
+                  <span class="dotted-line"></span>
+                </div>
+                <div class="menu-item-description">
+                  <p>
+                    Tomato saar <br />Dal Rasam <br />
+                    Peper Soup<br />
+                    Spinach Lentil Soup
+                  </p>
+                </div>
+              </li>
+              <li>
+                <div class="menu-item-title">
+                  <p>ASIAN FOOD</p>
+                  <span class="dotted-line"></span>
+                </div>
+                <div class="menu-item-description">
+                  <p>
+                    Veg. Crispy<br />
+                    Paneer 65<br />
+                    Paneer salt and papper<br />
+                    Paneer Chilly<br />
+                    Mushroom and Baby Corn Chilly<br />
+                  </p>
+                </div>
+              </li>
+              <li>
+                <div class="menu-item-title">
+                  <p>ITALIAN AND CONTINENTAL</p>
+                  <span class="dotted-line"></span>
+                </div>
+                <div class="menu-item-description">
+                  <p>
+                    Corn and cheese croquettes<br />
+                    Corn cheese ball<br />
+                    Cheese chilly tarts<br />
+                    Olive and pepper tarts<br />
+                    Basil and tomato tarts<br />
+                    Herbed tomato Bruschetta<br />
+                    Frommagio fritto<br />
+                    Potate Torminant<br />
+                    Mushroom jarina<br />
+                    stuffed chees mushroom<br />
+                    B.B.Q potao<br />
+                    Spinach deep<br />
+                    Nachos With Cheese<br />
+                    Tomato Bruchetta<br />
+                    special Tacos<br />
+                    Onion Rings<br />
+                    Quesaddala
+                  </p>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <!-- .col-md-6 end -->
+          <!-- .col-md-6 start -->
+          <div class="col-md-6 menu-right-shadow">
+            <ul>
+              <li>
+                <h5>SALADS</h5>
+              </li>
+              <li class="menu-item">
+                <div class="menu-item-title">
+                  <p>INDIAN</p>
+                  <span class="dotted-line"></span>
+                </div>
+                <div class="menu-item-description">
+                  <p>
+                    Green salad<br />Papdi chaat<br />Aloo chaat<br />Aloo papdi
+                    chaat<br />All Type Raita<br />Dil cucumber<br />Tadka
+                    dahi<br />Dahi ke bhale <br />Corn and pineapple salad.
+                  </p>
+                </div>
+              </li>
+              <li class="menu-item">
+                <div class="menu-item-title">
+                  <p>ASIAN SOUPS</p>
+                  <span class="dotted-line"></span>
+                </div>
+                <div class="menu-item-description">
+                  <p>
+                    Thai Glass Noodles with Coriander<br />
+                    Mixed Green Salad with Assorted Dressings<br />
+                    Mussel Salad with Chili Lime Dressing<br />
+                    Som tam salad<br />
+                    Kimchi salad<br />
+                    Oriental style rice papper salad.
+                  </p>
+                </div>
+              </li>
+              <li class="menu-item">
+                <div class="menu-item-title">
+                  <p>ITALIAN AND CONTINENTAL</p>
+                  <span class="dotted-line"></span>
+                </div>
+                <div class="menu-item-description">
+                  <p>
+                    Ceasar salad<br />
+                    Greek salad<br />
+                    Insalata mista<br />
+                    Italian pasta salad<br />
+                    Tossed Salad<br />
+                    Russian salad<br />
+                    Beans Sprout Salad<br />
+                    Waldorf salad<br />
+                    Coleslaw salad<br />
+                    Salad of baby potatoes with Dijon mustard<br />
+                    German potato salad with streaky bacon and scallion<br />
+                    Roasted beetroot salad with honey and lemon vinaigrette<br />
+                    Gado gado salad<br />
+                    Beet root and feta chees salad<br />
+                    Watermelon With feta cheese.
+                  </p>
+                </div>
+              </li>
+            </ul>
+            <ul class="menu-style-2">
+              <li>
+                <h5>APPITIZERS VEG</h5>
+              </li>
+              <li class="menu-item">
+                <div class="menu-item-title">
+                  <p>INDIAN</p>
+                  <span class="dotted-line"></span>
+                </div>
+                <div class="menu-item-description">
+                  <p>
+                    Herbed Paneer tikka<br />
+                    Paneer chutney wale<br />
+                    Paneer peshwari tikka<br />
+                    Vegetable seekh kebab<br />
+                    Aloo Kalimiri<br />
+                    Aloo Corn ki Tikki<br />
+                    Aloo hare pyaz ki Tikki<br />
+                    Paneer Zaffrani<br />
+                    Paneer tikka <br />
+                    Tandoori Aloo<br />
+                    Aloo soya bean ki Tikki<br />
+                    Paneer seekh<br />
+                    Hara bhara kebab<br />
+                    dahi ke kabab<br />
+                    mutter ke kabab<br />
+                    Tandoori Gobi<br />
+                    Smoked brocoly florets<br />
+                    Reshmi paneer tikka<br />
+                    Paneer mirch tikka<br />
+                    Paneer ka shula<br />
+                    Paneer akhrot ki seekh<br />
+                    Multani paneer tikka<br />
+                    Paneer in imperial green souce<br />
+                    Charmula cottage cheese<br />
+                    Mutani mushroom <br />
+                    Paneer malai tikka.
+                  </p>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <!-- .col-md-6 end -->
+        </div>
+        <!-- .row end -->
+        <!-- .row start -->
+        <div class="row">
+          <div
+            class="col-md-12 centered triggerAnimation animated"
+            data-animate="fadeInUp"
+          >
+            <a href="#" class="btn btn-big black"
+              ><span>Download menu (pdf)</span></a
+            >
+          </div>
+        </div>
+        <!-- .row end -->
+      </div>
+      <!-- .container end -->
+    </div>
+    <!-- .page-content end -->
 
     <!-- .page-content start -->
-    <div class="page-content custom-img-background dark bkg-img12 custom-col-padding mb-100">
-        <div class="container">
-            <!-- .row start -->
-            <div class="row">
-                <!-- .col-md-12 start -->
-                <div class="col-md-12 centered">
-                    <div class="custom-heading style-1 triggerAnimation animated" data-animate='fadeInUp'>
-                        <h2><span>Wine List</span></h2>
-                        <h2>Finest wine selection</h2>
+    <div
+      class="page-content custom-img-background dark bkg-img12 custom-col-padding mb-100"
+    >
+      <div class="container">
+        <!-- .row start -->
+        <div class="row">
+          <!-- .col-md-12 start -->
+          <div class="col-md-12 centered">
+            <div
+              class="custom-heading style-1 triggerAnimation animated"
+              data-animate="fadeInUp"
+            >
+              <!-- .divider.style-2 start -->
+              <div class="divider style-2 center">
+                <span class="hr-double left"></span>
+                <span class="divider-svg">
+                  <img src="img/svg/heading-icon.svg" alt="Gajraj Caterers" />
+                </span>
+                <span class="hr-double right"></span>
+              </div>
+            </div>
+            <!-- .custom-heading.style-1 end -->
+          </div>
+          <!-- .col-md-12 end -->
+        </div>
+        <!-- .row end -->
+      </div>
+      <!-- .container end -->
+    </div>
+    <!-- .page-content end -->
 
-                        <!-- .divider.style-2 start -->
-                        <div class="divider style-2 center">
-                            <span class="hr-double left"></span>
-                            <span class="divider-svg">
-                                <img src="img/svg/heading-icon.svg"
-                                    alt="Gajraj Caterers">
-                            </span>
-                            <span class="hr-double right"></span>
-                        </div>
-                    </div><!-- .custom-heading.style-1 end -->
-                </div><!-- .col-md-12 end -->
-            </div><!-- .row end -->
-        </div><!-- .container end -->
-    </div><!-- .page-content end -->
+    <!-- .page-content end -->
+
+    <!-- .page-content start -->
 
     <!-- .page-content start -->
     <div class="page-content">
-        <div class="container">
-            <!-- .row start -->
-            <div class="row mb-20">
-                <!-- .col-md-6 start -->
-                <div class="col-md-6">
-                    <div class="custom-heading style-2">
-                        <h4>Wine by the glass (100 ml)</h4>
-                        <div class="divider style-1">
-                            <i class="fa fa-circle hr-icon left"></i>
-                            <span class="hr-simple right"></span>
-                        </div>
-                    </div><!-- .custom-heading.style-2 end -->
-                    <ul class="menu-style-2">
-                        <li>
-                            <h5>CHAMPAGNE</h5>
-                        </li>
-                        <li class="menu-item">
-                            <div class="menu-item-title">
-                                <p>NV Veuve Clicquot Brut Rose</p>
-                                <span class="dotted-line"></span>
-                            </div>
-                            <div class="menu-item-price">
-                                <p>$29</p>
-                            </div>
-                            <div class="menu-item-description">
-                                <p>Elegant and sensual wine from Reims, France, exquisite taste and sensual idensity.
-                                </p>
-                            </div>
-                        </li>
-                        <li class="menu-item">
-                            <div class="menu-item-title">
-                                <p>Grand Cru Pinot Noir Vintage</p>
-                                <span class="dotted-line"></span>
-                            </div>
-                            <div class="menu-item-price">
-                                <p>$32</p>
-                            </div>
-                            <div class="menu-item-description">
-                                <p>Tasty with almond and halzelnut notes and pineapple plus papaya soft aroma.</p>
-                            </div>
-                        </li>
-                        <li>
-                            <h5>Still white</h5>
-                        </li>
-                        <li class="menu-item">
-                            <div class="menu-item-title">
-                                <p>A. Retief Sauvignon Blanc</p>
-                                <span class="dotted-line"></span>
-                            </div>
-                            <div class="menu-item-price">
-                                <p>$14</p>
-                            </div>
-                        </li>
-                        <li class="menu-item">
-                            <div class="menu-item-title">
-                                <p>Peter Zemmer Pinot Grigio</p>
-                                <span class="dotted-line"></span>
-                            </div>
-                            <div class="menu-item-price">
-                                <p>$18</p>
-                            </div>
-                        </li>
-                        <li class="menu-item">
-                            <div class="menu-item-title">
-                                <p>Mount Pleasant Lovedale Semillon</p>
-                                <span class="dotted-line"></span>
-                            </div>
-                            <div class="menu-item-price">
-                                <p>$26</p>
-                            </div>
-                        </li>
-                        <li class="menu-item">
-                            <div class="menu-item-title">
-                                <p>Toolangi Pauls Chardonnay </p>
-                                <span class="dotted-line"></span>
-                            </div>
-                            <div class="menu-item-price">
-                                <p>$26</p>
-                            </div>
-                        </li>
-                        <li>
-                            <h5>Still red</h5>
-                        </li>
-                        <li class="menu-item">
-                            <div class="menu-item-title">
-                                <p>Torbeck Celts Shiraz</p>
-                                <span class="dotted-line"></span>
-                            </div>
-                            <div class="menu-item-price">
-                                <p>$29</p>
-                            </div>
-                        </li>
-                        <li class="menu-item">
-                            <div class="menu-item-title">
-                                <p>Caillard Mataro</p>
-                                <span class="dotted-line"></span>
-                            </div>
-                            <div class="menu-item-price">
-                                <p>$23</p>
-                            </div>
-                        </li>
-                        <li class="menu-item">
-                            <div class="menu-item-title">
-                                <p>Barbaresco Cascina Ghercina Riserva Nebbiolo</p>
-                                <span class="dotted-line"></span>
-                            </div>
-                            <div class="menu-item-price">
-                                <p>$22</p>
-                            </div>
-                        </li>
-                        <li class="menu-item">
-                            <div class="menu-item-title">
-                                <p>Between Five Bells Negroamaro</p>
-                                <span class="dotted-line"></span>
-                            </div>
-                            <div class="menu-item-price">
-                                <p>$26</p>
-                            </div>
-                        </li>
-                    </ul>
-                </div><!-- .col-md-6 end -->
-                <!-- .col-md-6 start -->
-                <div class="col-md-6">
-                    <div class="custom-heading style-2">
-                        <h4>HALF BOTTLES (375 ml)</h4>
-                        <div class="divider style-1">
-                            <i class="fa fa-circle hr-icon left"></i>
-                            <span class="hr-simple right"></span>
-                        </div>
-                    </div><!-- .custom-heading.style-2 end -->
-                    <ul class="menu-style-2">
-                        <li>
-                            <h5>Half bottles sparkling</h5>
-                        </li>
-                        <li class="menu-item">
-                            <div class="menu-item-title">
-                                <p>NV Adami Garbel Prosecco Brut</p>
-                                <span class="dotted-line"></span>
-                            </div>
-                            <div class="menu-item-price">
-                                <p>$55</p>
-                            </div>
-                        </li>
-                        <li class="menu-item">
-                            <div class="menu-item-title">
-                                <p>NV Thienot Brut</p>
-                                <span class="dotted-line"></span>
-                            </div>
-                            <div class="menu-item-price">
-                                <p>$90</p>
-                            </div>
-                        </li>
-                        <li class="menu-item">
-                            <div class="menu-item-title">
-                                <p>NV Veuve Clicquot Brut</p>
-                                <span class="dotted-line"></span>
-                            </div>
-                            <div class="menu-item-price">
-                                <p>$100</p>
-                            </div>
-                        </li>
-                        <li class="menu-item">
-                            <div class="menu-item-title">
-                                <p>MV Krug Grande Cuvee</p>
-                                <span class="dotted-line"></span>
-                            </div>
-                            <div class="menu-item-price">
-                                <p>$310</p>
-                            </div>
-                        </li>
-                        <li>
-                            <h5>Half bottles white</h5>
-                        </li>
-                        <li class="menu-item">
-                            <div class="menu-item-title">
-                                <p>Bella Ridge Chenin Blanc</p>
-                                <span class="dotted-line"></span>
-                            </div>
-                            <div class="menu-item-price">
-                                <p>$65</p>
-                            </div>
-                        </li>
-                        <li class="menu-item">
-                            <div class="menu-item-title">
-                                <p>Vouvray Clos de Bourg Sec Huet</p>
-                                <span class="dotted-line"></span>
-                            </div>
-                            <div class="menu-item-price">
-                                <p>$100</p>
-                            </div>
-                        </li>
-                        <li class="menu-item">
-                            <div class="menu-item-title">
-                                <p>Vouvray Le Mont Sec Huet</p>
-                                <span class="dotted-line"></span>
-                            </div>
-                            <div class="menu-item-price">
-                                <p>$120</p>
-                            </div>
-                        </li>
-                        <li>
-                            <h5>Half bottles red</h5>
-                        </li>
-                        <li class="menu-item">
-                            <div class="menu-item-title">
-                                <p>Mount Mary Pinot Noir</p>
-                                <span class="dotted-line"></span>
-                            </div>
-                            <div class="menu-item-price">
-                                <p>$180</p>
-                            </div>
-                        </li>
-                        <li class="menu-item">
-                            <div class="menu-item-title">
-                                <p>Curly Flat Pinot Noir</p>
-                                <span class="dotted-line"></span>
-                            </div>
-                            <div class="menu-item-price">
-                                <p>$75</p>
-                            </div>
-                        </li>
-                        <li class="menu-item">
-                            <div class="menu-item-title">
-                                <p>Brunello di Montalcino La Chiuse</p>
-                                <span class="dotted-line"></span>
-                            </div>
-                            <div class="menu-item-price">
-                                <p>$135</p>
-                            </div>
-                        </li>
-                        <li class="menu-item">
-                            <div class="menu-item-title">
-                                <p>Barollo Massolino Serralunga d’Alba</p>
-                                <span class="dotted-line"></span>
-                            </div>
-                            <div class="menu-item-price">
-                                <p>$125</p>
-                            </div>
-                        </li>
-                        <li class="menu-item">
-                            <div class="menu-item-title">
-                                <p>Bella Ridge Grenache</p>
-                                <span class="dotted-line"></span>
-                            </div>
-                            <div class="menu-item-price">
-                                <p>$70</p>
-                            </div>
-                        </li>
-                        <li class="menu-item">
-                            <div class="menu-item-title">
-                                <p>Rusden Black Guts Shiraz</p>
-                                <span class="dotted-line"></span>
-                            </div>
-                            <div class="menu-item-price">
-                                <p>$88</p>
-                            </div>
-                        </li>
-                    </ul>
-                </div><!-- .col-md-6 end -->
-            </div><!-- .row end -->
-            <!-- .row start -->
-            <div class="row">
-                <div class="col-md-12 centered triggerAnimation animated" data-animate='fadeInUp'>
-                    <a href="#" class="btn btn-big black"><span>Download wine list</span></a>
+      <div class="container">
+        <!-- .row start -->
+        <div class="row">
+          <!-- .col-md-12 start -->
+          <div class="col-md-12 centered mb-0">
+            <div class="custom-heading style-1">
+              <h3><span>Reservation</span></h3>
+              <h3>Book your table</h3>
+
+              <!-- .divider.style-1 start -->
+              <div class="divider style-1 center">
+                <span class="hr-simple left"></span>
+                <i class="fa fa-circle hr-icon"></i>
+                <span class="hr-simple right"></span>
+              </div>
+            </div>
+            <!-- .custom-heading.style-1 end -->
+          </div>
+          <!-- .col-md-12 end -->
+          <!-- .col-md-12 start -->
+          <div class="col-md-12 centered open-table-widget-style-2">
+            <!-- Open table widget start -->
+            <div
+              class="otw-bare-bones-style widget open-table-widget triggerAnimation animated"
+              data-animate="fadeIn"
+            >
+              <div class="otw-bare-bones">
+                <div class="otw-widget-form-wrap">
+                  <form method="POST" action="/submit" class="otw-widget-form">
+                    <div class="otw-wrapper">
+                      <div class="otw-name-wrap otw-input-wrap">
+                        <input
+                          name="name"
+                          class="otw-reservation-name"
+                          type="text"
+                          placeholder="Your name"
+                        />
+                      </div>
+                      <div class="otw-email-wrap otw-input-wrap">
+                        <input
+                          name="email"
+                          class="otw-reservation-email"
+                          type="text"
+                          placeholder="Your email"
+                        />
+                      </div>
+                      <div class="otw-name-wrap otw-input-wrap">
+                        <input
+                          name="phone"
+                          class="otw-reservation-name"
+                          type="text"
+                          placeholder="Mobile no."
+                        />
+                      </div>
+                      <div class="otw-date-wrap otw-input-wrap">
+                        <input
+                          name="date"
+                          class="otw-reservation-date"
+                          type="text"
+                          value="17/09/2016"
+                          autocomplete="off"
+                          data-date-format="mm/dd/yyyy"
+                        />
+                      </div>
+                      <div
+                        name="people"
+                        class="otw-party-size-wrap otw-input-wrap"
+                      >
+                        <select
+                          name="people"
+                          class="otw-party-size-select selectpicker"
+                        >
+                          <option value="1">1 person</option>
+                          <option value="2">2 people</option>
+                          <option value="3">3 people</option>
+                          <option value="4">4 people</option>
+                          <option value="5">5 people</option>
+                          <option value="6">6 people</option>
+                          <option value="7">7 people</option>
+                          <option value="8">8 people</option>
+                          <option value="9">9 people</option>
+                          <option value="10">10 people</option>
+                          <option value="11">11 people</option>
+                          <option value="12">12 people</option>
+                          <option value="13">13 people</option>
+                          <option value="14">14 people</option>
+                          <option value="15">15 people</option>
+                        </select>
+                      </div>
+                      <div name="time" class="otw-time-wrap otw-input-wrap">
+                        <select
+                          name="time"
+                          class="otw-reservation-time selectpicker"
+                        >
+                          <option value="6:00pm">6:00 pm</option>
+                          <option value="6:30pm">6:30 pm</option>
+                          <option value="7:00pm">7:00 pm</option>
+                          <option value="7:30pm">7:30 pm</option>
+                          <option value="8:00pm">8:00 pm</option>
+                          <option value="8:30pm">8:30 pm</option>
+                          <option value="9:00pm">9:00 pm</option>
+                          <option value="9:30pm">9:30 pm</option>
+                          <option value="10:00pm">10:00 pm</option>
+                          <option value="10:30pm" selected="selected">
+                            10:30 pm
+                          </option>
+                        </select>
+                      </div>
+
+                      <div name="event" class="otw-time-wrap otw-input-wrap">
+                        <select
+                          name="event"
+                          class="otw-reservation-time selectpicker"
+                        >
+                          <option selected="Event Type">Event Type</option>
+                          <option value="Weddings">Weddings</option>
+                          <option value="Office Parties">Office Parties</option>
+                          <option value="Corporate Functions">
+                            Corporate Functions
+                          </option>
+                          <option value="Anniversaries">Anniversaries</option>
+                          <option value="Formal Receptions">
+                            Formal Receptions
+                          </option>
+                          <option value="Coffee Breaks">Coffee Breaks</option>
+                          <option value="Housewarming Parties">
+                            Housewarming Parties
+                          </option>
+                          <option value="Birthdays/ Holidays">
+                            Birthdays/ Holidays
+                          </option>
+                          <option value="Luncheons">Luncheons</option>
+                          <option value="Box Lunches">Box Lunches</option>
+                          <option value="Party Platters">Party Platters</option>
+                          <option value="Dinner Parties">Dinner Parties</option>
+                        </select>
+                      </div>
+
+                      <button type="submit" class="submitBtn">
+                        Book Event
+                      </button>
+                    </div>
+                  </form>
                 </div>
-            </div><!-- .row end -->
-        </div><!-- .container end -->
-    </div><!-- .page-content end -->
-
-    <!-- .page-content start -->
-    <div class="page-content custom-img-background dark bkg-img13 custom-col-padding mb-100">
-        <div class="container">
-            <!-- .row start -->
-            <div class="row">
-
-            </div><!-- .row end -->
-        </div><!-- .container end -->
-    </div><!-- .page-content end -->
-
-    <!-- .page-content start -->
-    <div class="page-content">
-        <div class="container">
-            <!-- .row start -->
-            <div class="row">
-                <!-- .col-md-12 start -->
-                <div class="col-md-12 centered mb-0">
-                    <div class="custom-heading style-1">
-                        <h3><span>Reservation</span></h3>
-                        <h3>Book your table</h3>
-
-                        <!-- .divider.style-1 start -->
-                        <div class="divider style-1 center">
-                            <span class="hr-simple left"></span>
-                            <i class="fa fa-circle hr-icon"></i>
-                            <span class="hr-simple right"></span>
-                        </div>
-                    </div><!-- .custom-heading.style-1 end -->
-                </div><!-- .col-md-12 end -->
-                <!-- .col-md-12 start -->
-                <div class="col-md-12 centered open-table-widget-style-2">
-
-                    <!-- Open table widget start -->
-                    <div class="otw-bare-bones-style widget open-table-widget triggerAnimation animated"
-                        data-animate='fadeIn'>
-                        <div class="otw-bare-bones">
-                            <div class="otw-widget-form-wrap">
-                                <form method="get" class="otw-widget-form"
-                                    action="http://www.opentable.com/restaurant-search.aspx" target="_blank">
-                                    <div class="otw-wrapper">
-                                        <div class="otw-name-wrap otw-input-wrap">
-                                            <input name="Name" class="otw-reservation-name" type="text"
-                                                placeholder="Your name">
-                                        </div>
-                                        <div class="otw-email-wrap otw-input-wrap">
-                                            <input name="Name" class="otw-reservation-email" type="text"
-                                                placeholder="Your email">
-                                        </div>
-                                        <div class="otw-date-wrap otw-input-wrap">
-                                            <input name="startDate" class="otw-reservation-date" type="text"
-                                                value="17/09/2016" autocomplete="off" data-date-format="mm/dd/yyyy">
-                                        </div>
-                                        <div class="otw-time-wrap otw-input-wrap">
-
-                                            <select name="ResTime" class="otw-reservation-time selectpicker">
-                                                <option value="6:00pm">6:00 pm</option>
-                                                <option value="6:30pm">6:30 pm</option>
-                                                <option value="7:00pm">7:00 pm</option>
-                                                <option value="7:30pm">7:30 pm</option>
-                                                <option value="8:00pm">8:00 pm</option>
-                                                <option value="8:30pm">8:30 pm</option>
-                                                <option value="9:00pm">9:00 pm</option>
-                                                <option value="9:30pm">9:30 pm</option>
-                                                <option value="10:00pm">10:00 pm</option>
-                                                <option value="10:30pm" selected="selected">10:30 pm</option>
-                                            </select>
-
-                                        </div>
-                                        <div class="otw-party-size-wrap otw-input-wrap">
-
-                                            <select name="partySize" class="otw-party-size-select selectpicker">
-                                                <option value="1">1 person</option>
-                                                <option value="2">2 people</option>
-                                                <option value="3">3 people</option>
-                                                <option value="4" selected="selected">4 people</option>
-                                                <option value="5">5 people</option>
-                                                <option value="6">6 people</option>
-                                                <option value="7">7 people</option>
-                                                <option value="8">8 people</option>
-                                                <option value="9">9 people</option>
-                                                <option value="10">10 people</option>
-                                                <option value="11">11 people</option>
-                                                <option value="12">12 people</option>
-                                                <option value="13">13 people</option>
-                                                <option value="14">14 people</option>
-                                                <option value="15">15 people</option>
-                                            </select>
-
-                                        </div>
-
-                                        <div class="otw-button-wrap">
-                                            <input type="submit" class="otw-submit" value="Find a Table">
-                                        </div>
-                                    </div>
-                                </form>
-                            </div><!-- .otw-widget-form-wrap end -->
-                        </div>
-                    </div><!-- Open table widget end -->
-                </div><!-- .col-md-12 end -->
-
-            </div><!-- .row end -->
-        </div><!-- .container end -->
-    </div><!-- .page-content end -->
-
-
+                <!-- .otw-widget-form-wrap end -->
+              </div>
+            </div>
+            <!-- Open table widget end -->
+          </div>
+          <!-- .col-md-12 end -->
+        </div>
+        <!-- .row end -->
+      </div>
+      <!-- .container end -->
+    </div>
+    <!-- .page-content end -->
 
     <!-- #footer-wrapper start -->
     <div id="footer-wrapper">
-        <!-- #footer start -->
-        <footer id="footer">
-            <!-- .container start -->
-            <div class="container">
-                <!-- .row start -->
-                <div class="row mb-60">
-                    <!-- .col-md-4 start -->
-                    <div class="col-md-4">
+      <!-- #footer start -->
+      <footer id="footer">
+        <!-- .container start -->
+        <div class="container">
+          <!-- .row start -->
+          <div class="row mb-60">
+            <!-- .col-md-4 start -->
+            <div class="col-md-4"></div>
+            <!-- .col-md-4 end-->
 
-                    </div><!-- .col-md-4 end-->
+            <!-- .col-md-4 start -->
+            <div class="col-md-4 centered">
+              <a href="index-2.html">
+                <img src="img/logo.png" alt="Gajraj Caterers" />
+              </a>
 
-                    <!-- .col-md-4 start -->
-                    <div class="col-md-4 centered">
-                        <a href="/">
-                            <img src="img/logo.png" alt="Gajraj Caterers">
-                        </a>
+              <ul class="contact-info-list">
+                <li>
+                  Ramraksha, 3rd floor, Anandnagar, Old Sanghvi Pune,
+                  Maharashtra
+                </li>
+                <li><span>RESERVATIONS NUMBER:</span> +91- 95119 90088</li>
+              </ul>
+            </div>
+            <!-- .col-md-4 end -->
 
-                        <ul class="contact-info-list">
-                            <li>
-                                22 Royal Street, Sundance Avenue, New York
-                            </li>
-                            <li>
-                                <span>RESERVATIONS NUMBER:</span> +00 25 854 78521
-                            </li>
+            <!-- .col-md-4 start -->
+            <div class="col-md-4"></div>
+            <!-- .col-md-4 end-->
+          </div>
+          <!-- .row end -->
 
-                            <li>
-                                <span>WORKING HOURS:</span>
-                            </li>
-
-                            <li>
-                                MON- FRI: 08:00 AM - 10:00 PM
-                            </li>
-                            <li>SAT - SUN: 10:00 AM - 11:00 PM</li>
-                        </ul>
-                    </div><!-- .col-md-4 end -->
-
-                    <!-- .col-md-4 start -->
-                    <div class="col-md-4">
-
-                    </div><!-- .col-md-4 end-->
-                </div><!-- .row end -->
-
-                <!-- .row start -->
-                <div class="row mb-40">
-                    <!-- .col-md-6 start -->
-                    <div class="col-md-6">
-
-                        <!-- .social-links start -->
-                        <ul class="social-links">
-                            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                            <li><a href="#"><i class="fa fa-instagram"></i></a></li>
-                            <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-                        </ul><!-- .social-links end -->
-                    </div><!-- .col-md-6 end -->
-
-                    <!-- .col-md-6 start -->
-                    <div class="col-md-6">
-                        <!-- .newsletter start -->
-                        <form class="newsletter">
-                            <input class="email" type="email" placeholder="Subscribe to our newsletter feed:">
-                            <input type="submit" class="submit" value="Submit">
-                        </form><!-- .newsletter end -->
-                    </div><!-- .col-md-6 end -->
-                </div><!-- .row end -->
-            </div><!-- .container end -->
-        </footer><!-- #footer end -->
-    </div><!-- #footer-wrapper end -->
+          <!-- .row start -->
+          <div class="row mb-40">
+            <!-- .col-md-6 start -->
+            <div class="col-md-6">
+              <!-- .social-links start -->
+              <ul class="social-links">
+                <li>
+                  <a href="#"><i class="fa fa-facebook"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fa fa-twitter"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fa fa-instagram"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fa fa-linkedin"></i></a>
+                </li>
+              </ul>
+              <!-- .social-links end -->
+            </div>
+            <!-- .col-md-6 end -->
+          </div>
+          <!-- .row end -->
+        </div>
+        <!-- .container end -->
+      </footer>
+      <!-- #footer end -->
+    </div>
+    <!-- #footer-wrapper end -->
 
     <!-- #copyright-container start -->
     <div id="copyright-container">
-        <!-- .container start -->
-        <div class="container">
-            <!-- .row start -->
-            <div class="row">
-                <!-- .col-md-6 start -->
-                <div class="col-md-6">
-                    <p>©  Gajraj Caterers 2020. All rights reserved.</p>
-                </div><!-- .col-md-6 end -->
+      <!-- .container start -->
+      <div class="container">
+        <!-- .row start -->
+        <div class="row">
+          <!-- .col-md-6 start -->
+          <div class="col-md-6">
+            <p>© Gajraj Caterers 2020. All rights reserved.</p>
+          </div>
+          <!-- .col-md-6 end -->
 
-                <!-- .col-md-6 start -->
-                <div class="col-md-6">
-                    <ul class="breadcrumb">
-                        <li><a href="/">Home</a></li>
-                        <li><a href="/about">About</a></li>
-                        <li><a href="/menu">Menu</a></li>
-                        <li><a href="/catering">Catering</a></li>
-                        <li><a href="/gallery">Gallery</a></li>
-                        <li><a href="/contact">Contact</a></li>
-                    </ul>
-                </div><!-- .col-md-6 end -->
-            </div><!-- .row end -->
-        </div><!-- .container end -->
+          <!-- .col-md-6 start -->
+          <div class="col-md-6">
+            <ul class="breadcrumb">
+              <li><a href="/">Home</a></li>
+              <li><a href="/about">About</a></li>
+              <li><a href="/menu">Menu</a></li>
+              <li><a href="/catering">Catering</a></li>
+              <li><a href="/menu">Menu</a></li>
+              <li><a href="/gallery">Gallery</a></li>
+              <li><a href="/contact">Contact</a></li>
+            </ul>
+          </div>
+          <!-- .col-md-6 end -->
+        </div>
+        <!-- .row end -->
+      </div>
+      <!-- .container end -->
 
-        <a href="#" class="scroll-up"><i class="fa fa-angle-double-up"></i></a>
+      <a href="#" class="scroll-up"><i class="fa fa-angle-double-up"></i></a>
+    </div>
+    <!-- .copyright-container end -->
 
-    </div><!-- .copyright-container end -->
-
-    <script src="js/jquery-2.1.4.min.js"></script><!-- jQuery library -->
-    <script src="js/bootstrap.min.js"></script><!-- .bootstrap script -->
-    <script src="js/jquery.scripts.min.js"></script><!-- modernizr, retina, stellar for parallax -->
-    <script src="masterslider/jquery.easing.min.js"></script><!-- Master slider easing js -->
-    <script src="js/jquery.dlmenu.min.js"></script><!-- for responsive menu -->
-    <script src="js/include.js"></script><!-- custom js functions -->
-    <script src="js/TweenMax.min.js"></script> <!-- Plugin for smooth scrolling-->
-    <script src="js/ScrollToPlugin.min.js"></script> <!-- Plugin for smooth scrolling-->
+    <script src="js/jquery-2.1.4.min.js"></script>
+    <!-- jQuery library -->
+    <script src="js/bootstrap.min.js"></script>
+    <!-- .bootstrap script -->
+    <script src="js/jquery.scripts.min.js"></script>
+    <!-- modernizr, retina, stellar for parallax -->
+    <script src="masterslider/jquery.easing.min.js"></script>
+    <!-- Master slider easing js -->
+    <script src="js/jquery.dlmenu.min.js"></script>
+    <!-- for responsive menu -->
+    <script src="js/include.js"></script>
+    <!-- custom js functions -->
+    <script src="js/TweenMax.min.js"></script>
+    <!-- Plugin for smooth scrolling-->
+    <script src="js/ScrollToPlugin.min.js"></script>
+    <!-- Plugin for smooth scrolling-->
 
     <script>
-        /* <![CDATA[ */
-        jQuery(document).ready(function ($) {
-            'use strict';
+      /* <![CDATA[ */
+      jQuery(document).ready(function ($) {
+        "use strict";
 
-            // BOOKING FORM AJAX SUBMIT START
-            $('.otw-widget-form .otw-submit').on('click', function (event) {
-                event.preventDefault();
-                var $form = $(this).closest('form');
+        // BOOKING FORM AJAX SUBMIT START
+        $(".otw-widget-form .otw-submit").on("click", function (event) {
+          event.preventDefault();
+          var $form = $(this).closest("form");
 
-                var name = $form.find('.otw-reservation-name').val();
-                var email = $form.find('.otw-reservation-email').val();
-                var date = $form.find('.otw-reservation-date').val();
-                var time = $form.find('.otw-reservation-time').val();
-                var guests = $form.find('.otw-party-size-select').val();
-                var form_data = new Array({
-                    'Name': name,
-                    'Email': email,
-                    'Date': date,
-                    'Time': time,
-                    'Guests': guests
-                });
-                $.ajax({
-                    type: 'POST',
-                    url: "contact.php",
-                    data: ({
-                        'action': 'book_table',
-                        'form_data': form_data
-                    })
-                }).done(function (data) {
-                    alert(data);
-                });
-            }); // BOOKING FORM AJAX SUBMIT END                
-
-        });
-        /* ]]> */
+          var name = $form.find(".otw-reservation-name").val();
+          var email = $form.find(".otw-reservation-email").val();
+          var date = $form.find(".otw-reservation-date").val();
+          var time = $form.find(".otw-reservation-time").val();
+          var guests = $form.find(".otw-party-size-select").val();
+          var form_data = new Array({
+            Name: name,
+            Email: email,
+            Date: date,
+            Time: time,
+            Guests: guests,
+          });
+          $.ajax({
+            type: "POST",
+            url: "contact.php",
+            data: {
+              action: "book_table",
+              form_data: form_data,
+            },
+          }).done(function (data) {
+            alert(data);
+          });
+        }); // BOOKING FORM AJAX SUBMIT END
+      });
+      /* ]]> */
     </script>
-</body>
+  </body>
 </html>
